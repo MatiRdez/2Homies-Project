@@ -5,4 +5,9 @@
 .logo img{
     width: 260px;
     border-radius: 15px;
+    transition: all 1s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
 }
