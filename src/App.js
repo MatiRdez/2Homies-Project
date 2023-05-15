@@ -7,7 +7,8 @@ function App() {
   return (
     <div>
       <LogoApp/>
-      <BotonLogin/>
+      <BotonLogin texto='Iniciar sesión'/>
+      <BotonLogin texto='Registrarse'/>
     </div>
   );
 }
