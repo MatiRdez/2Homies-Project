@@ -3,7 +3,7 @@ import './styles/BotonLogin.css';
 
 const BotonLogin = (props) => {
     return(
-        <div>
+        <div className="boton">
             <input type="button" value={props.texto}></input>
         </div>
     )
