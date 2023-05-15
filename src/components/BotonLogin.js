@@ -1,4 +1,5 @@
 import React from "react";
+import './styles/BotonLogin.css';
 
 const BotonLogin = (props) => {
     return(
