@@ -6,6 +6,7 @@ const Menu = () => {
             <ul>
                 <li>Inicio</li>
                 <li>Mi colección</li>
+                <li>Descubrir</li>
             </ul>
         </div>
     )
