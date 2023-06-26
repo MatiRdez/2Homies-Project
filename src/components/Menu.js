@@ -5,6 +5,7 @@ const Menu = () => {
         <div>
             <ul>
                 <li>Inicio</li>
+                <li>Mi colección</li>
             </ul>
         </div>
     )
