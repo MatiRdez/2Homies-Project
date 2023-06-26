@@ -4,7 +4,7 @@ const Menu = () => {
     return(
         <div>
             <ul>
-                
+                <li>Inicio</li>
             </ul>
         </div>
     )
