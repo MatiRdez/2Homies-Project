@@ -6,3 +6,10 @@ const Categorias = () => {
         <div>
           <h2>Categorías</h2>
           <ul>
+           {categorias.map((categoria, index) => (
+             <li key={index}>{categoria}</li>
+          ))}
+          </ul>
+    </div>
+  );
+}
