@@ -7,3 +7,4 @@ const DetalleLibro = ({ libro }) => {
           <img src={libro.portada} alt={libro.titulo} />
           <p>Autor: {libro.autor}</p>
           <p>Sinopsis: {libro.sinopsis}</p>
+          <p>Fecha de publicación: {libro.fechaPublicacion}</p>
