@@ -8,3 +8,7 @@ const DetalleLibro = ({ libro }) => {
           <p>Autor: {libro.autor}</p>
           <p>Sinopsis: {libro.sinopsis}</p>
           <p>Fecha de publicación: {libro.fechaPublicacion}</p>
+        </div>
+    );
+}
+export default DetalleLibro;
