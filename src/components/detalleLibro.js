@@ -6,3 +6,4 @@ const DetalleLibro = ({ libro }) => {
           <h2>{libro.titulo}</h2>
           <img src={libro.portada} alt={libro.titulo} />
           <p>Autor: {libro.autor}</p>
+          <p>Sinopsis: {libro.sinopsis}</p>
