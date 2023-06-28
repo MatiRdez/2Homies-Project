@@ -1,3 +1,3 @@
 import React from "react";
 const Categorias = () => {
-    const categorias = ["Ficción", "No ficción",
+    const categorias = ["Ficción", "No ficción", "Ciencia ficción",
