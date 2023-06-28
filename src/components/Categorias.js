@@ -13,3 +13,4 @@ const Categorias = () => {
     </div>
   );
 }
+export default Categorias;
