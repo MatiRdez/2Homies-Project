@@ -6,6 +6,7 @@ const Login = () => {
             <label for="correo">Correo electrónico</label>
             <input id="correo" type="text"></input>
             <label for="pass">Contraseña</label>
+            <input id="pass" type="password"></input>
         </div>
     )
 }
