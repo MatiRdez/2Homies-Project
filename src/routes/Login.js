@@ -3,7 +3,7 @@ import '../components/styles/Login.css';
 
 const Login = () => {
     return(
-        <div>
+        <div className="form">
             <label for="correo">Correo electrónico</label>
             <input id="correo" type="text"></input>
             <label for="pass">Contraseña</label>
