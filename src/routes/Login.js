@@ -8,7 +8,7 @@ const Login = () => {
             <input id="correo" type="text"></input>
             <label for="pass">Contraseña</label>
             <input id="pass" type="password"></input>
-            <input type="button" value="Acceder"></input>
+            <input id="enviar" type="button" value="Acceder"></input>
         </div>
     )
 }
