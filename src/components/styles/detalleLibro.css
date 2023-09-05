@@ -14,6 +14,7 @@ div {
     font-size: 24px;
     margin-bottom: 10px;
   }
+  /* Estilo para la imagen de la portada del libro */
   img {
     max-width: 100%; /* Ajustar imagen al ancho del contenedor */
     height: auto; /* Mantener la proporción de aspecto */
