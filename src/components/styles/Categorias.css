@@ -26,6 +26,6 @@ div {
   }
   li:hover {
     color: #007bff; /* Cambiar color al azul cuando se pasa el mouse */
-    cursor: pointer; 
+    cursor: pointer;/* Cambiar el cursor a una mano */ 
   }
   
