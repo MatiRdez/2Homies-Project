@@ -15,6 +15,7 @@ div {
     margin-bottom: 10px;
   }
   img {
-    max-width: 100%; 
+    max-width: 100%; /* Ajustar imagen al ancho del contenedor */
+   
   }
   
