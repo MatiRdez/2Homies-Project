@@ -16,5 +16,5 @@ div {
   }
   ul {
     list-style-type: none; /* Quitar viñetas de la lista */
-   
+    padding: 0;
   }
