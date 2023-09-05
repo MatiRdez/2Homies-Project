@@ -16,6 +16,7 @@ div {
   }
   img {
     max-width: 100%; /* Ajustar imagen al ancho del contenedor */
-    height: auto; 
+    height: auto; /* Mantener la proporción de aspecto */
+    
   }
   
