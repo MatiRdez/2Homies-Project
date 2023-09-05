@@ -14,6 +14,7 @@ div {
     font-size: 24px;
     margin-bottom: 10px;
   }
+  /* Estilo para la lista de categorías */
   ul {
     list-style-type: none; /* Quitar viñetas de la lista */
     padding: 0;
