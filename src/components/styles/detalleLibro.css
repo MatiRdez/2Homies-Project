@@ -20,6 +20,7 @@ div {
     height: auto; /* Mantener la proporción de aspecto */
     margin-bottom: 15px;
   }
+  /* Estilo para los párrafos de información del libro */
   p {
     font-size: 16px;
     color: #555; /* Color de texto gris */
