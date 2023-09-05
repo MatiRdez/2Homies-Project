@@ -8,6 +8,7 @@ div {
     margin: 0 auto;/* Centrar horizontalmente */
     text-align: center; 
   }
+  /* Estilo para el título del libro */
   h2 {
     color: #333; /* Color de texto oscuro */
     font-size: 24px;
