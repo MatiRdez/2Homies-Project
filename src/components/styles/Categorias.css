@@ -5,5 +5,5 @@ div {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
     width: 300px; /* Ancho del contenedor */
     margin: 0 auto; /* Centrar horizontalmente */
-    
+    text-align: center;
   }
