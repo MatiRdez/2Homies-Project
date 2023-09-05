@@ -8,6 +8,7 @@ div {
     margin: 0 auto; /* Centrar horizontalmente */
     text-align: center;
   }
+  /* Estilo para el título de Categorías */
   h2 {
     color: #333; /* Color de texto oscuro */
     font-size: 24px;
