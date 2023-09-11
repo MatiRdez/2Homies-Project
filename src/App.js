@@ -8,6 +8,11 @@ function App() {
   return (
     <div>
       <LogoApp/>
+      <BrowserRouter>
+        <Routes>
+          <Route></Route>
+        </Routes>
+      </BrowserRouter>
       <BotonLogin texto='Iniciar sesión'/>
       <BotonLogin texto='Registrarse'/>
     </div>
