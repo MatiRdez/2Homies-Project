@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import LogoApp from './components/LogoApp.js';
 import BotonLogin from './components/BotonLogin';
+import Login from './routes/Login';
 import { BrowserRouter, Link, Route, Routes, NavLink } from 'react-router-dom';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <BrowserRouter>
         <NavLink to='/login'><BotonLogin texto='Iniciar sesión'/></NavLink>
         <Routes>
-          <Route path='/login'></Route>
+          <Route path='/login' element={<Login/>}></Route>
         </Routes>
       </BrowserRouter>
       <BotonLogin texto='Registrarse'/>
