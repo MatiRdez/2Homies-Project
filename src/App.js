@@ -10,7 +10,7 @@ function App() {
       <LogoApp/>
       <BrowserRouter>
         <Routes>
-          <Route></Route>
+          <Route path='/login'></Route>
         </Routes>
       </BrowserRouter>
       <BotonLogin texto='Iniciar sesión'/>
