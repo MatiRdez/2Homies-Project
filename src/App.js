@@ -9,11 +9,11 @@ function App() {
     <div>
       <LogoApp/>
       <BrowserRouter>
+        <NavLink to='/login'><BotonLogin texto='Iniciar sesión'/></NavLink>
         <Routes>
           <Route path='/login'></Route>
         </Routes>
       </BrowserRouter>
-      <BotonLogin texto='Iniciar sesión'/>
       <BotonLogin texto='Registrarse'/>
     </div>
   );
