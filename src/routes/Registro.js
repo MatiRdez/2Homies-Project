@@ -8,6 +8,17 @@ const Registro = () => {
     const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('');
 
+    const Datos = (e) => {
+        e.preventDefault();
+        createUserWithEmailAndPassword(Auth, email, usuario, password)
+            .then((userCredential) => {
+                console.log(userCredential);
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+
     return(
         <div>
             <form>
