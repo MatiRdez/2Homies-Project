@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Auth } from "../firebaseConfig";
+import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
 
 const Registro = () => {
@@ -10,7 +10,7 @@ const Registro = () => {
 
     const Datos = (e) => {
         e.preventDefault();
-        createUserWithEmailAndPassword(Auth, email, usuario, password)
+        createUserWithEmailAndPassword(auth, email, usuario, password)
             .then((userCredential) => {
                 console.log(userCredential);
             })
@@ -21,13 +21,13 @@ const Registro = () => {
 
     return(
         <div>
-            <form>
+            <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
-                <input id="correo" type="text" value={email}></input>
+                <input id="correo" type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
                 <label for="usuario">Nombre de usuario</label>
-                <input id="usuario" type="text" value={usuario}></input>
+                <input id="usuario" type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}></input>
                 <label for="pass">Contraseña</label>
-                <input id="pass" type="password" value={password}></input>
+                <input id="pass" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
                 <input id="enviar" type="submit" value="Registrarse"></input>
             </form>
         </div>
