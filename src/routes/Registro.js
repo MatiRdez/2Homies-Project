@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Auth } from "../firebaseConfig";
+import { createUserWithEmailAndPassword } from "@firebase/auth";
 
 const Registro = () => {
 
