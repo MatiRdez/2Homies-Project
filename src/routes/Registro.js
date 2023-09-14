@@ -13,3 +13,5 @@ const Registro = () => {
         </div>
     )
 }
+
+export default Registro;
