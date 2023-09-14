@@ -9,6 +9,7 @@ const Registro = () => {
             <input id="usuario" type="text"></input>
             <label for="pass">Contraseña</label>
             <input id="pass" type="password"></input>
+            <input id="enviar" type="button" value="Registrarse"></input>
         </div>
     )
 }
