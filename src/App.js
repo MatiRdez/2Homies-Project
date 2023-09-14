@@ -11,11 +11,11 @@ function App() {
       <LogoApp/>
       <BrowserRouter>
         <NavLink to='/login'><BotonLogin texto='Iniciar sesión'/></NavLink>
+        <NavLink to='/registro'><BotonLogin texto='Registrarse'/></NavLink>
         <Routes>
           <Route path='/login' element={<Login/>}></Route>
         </Routes>
       </BrowserRouter>
-      <BotonLogin texto='Registrarse'/>
     </div>
   );
 }
