@@ -6,6 +6,7 @@ const Registro = () => {
             <label for="correo">Correo electrónico</label>
             <input id="correo" type="text"></input>
             <label for="usuario">Nombre de usuario</label>
+            <input id="usuario" type="text"></input>
         </div>
     )
 }
