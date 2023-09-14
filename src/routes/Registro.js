@@ -8,6 +8,7 @@ const Registro = () => {
             <label for="usuario">Nombre de usuario</label>
             <input id="usuario" type="text"></input>
             <label for="pass">Contraseña</label>
+            <input id="pass" type="password"></input>
         </div>
     )
 }
