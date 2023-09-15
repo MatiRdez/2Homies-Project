@@ -8,6 +8,18 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const Datos = (e) => {
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                console.log(userCredential);
+                alert("Logeado correctamente");
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+
     return(
         <div className="form">
             <form>
