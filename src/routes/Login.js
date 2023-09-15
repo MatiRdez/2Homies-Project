@@ -1,5 +1,7 @@
 import React from "react";
 import '../components/styles/Login.css';
+import { auth } from "../firebaseConfig";
+import { signInWithEmailAndPassword } from "@firebase/auth";
 
 const Login = () => {
     return(
