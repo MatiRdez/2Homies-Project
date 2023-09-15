@@ -22,11 +22,11 @@ const Login = () => {
 
     return(
         <div className="form">
-            <form>
+            <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
-                <input id="correo" type="text"></input>
+                <input id="correo" type="text" onChange={(e) => setEmail(e.target.value)}></input>
                 <label for="pass">Contraseña</label>
-                <input id="pass" type="password"></input>
+                <input id="pass" type="password" onChange={(e) => setPassword(e.target.value)}></input>
                 <input id="enviar" type="submit" value="Acceder"></input>
             </form>
         </div>
