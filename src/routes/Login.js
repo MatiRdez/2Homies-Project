@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../components/styles/Login.css';
 import { auth } from "../firebaseConfig";
 import { signInWithEmailAndPassword } from "@firebase/auth";
+import BotonGoogle from "../components/LoginGoogle";
 
 const Login = () => {
 
