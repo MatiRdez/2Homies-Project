@@ -18,7 +18,7 @@ const BotonGoogle = () => {
 
     return(
         <div>
-            <button>Continuar con Google</button>
+            <button onClick={IniciarConGoogle}>Continuar con Google</button>
         </div>
     )
 }
