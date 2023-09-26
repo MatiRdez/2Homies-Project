@@ -6,6 +6,10 @@ const BotonGoogle = () => {
 
     const Provider = new GoogleAuthProvider();
 
+    const IniciarConGoogle = () => {
+        
+    }
+
     return(
         <div>
             <button>Continuar con Google</button>
