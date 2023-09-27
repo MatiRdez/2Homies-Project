@@ -1,4 +1,6 @@
 import React from "react";
+import { auth } from "../firebaseConfig";
+import { GithubAuthProvider, signInWithPopup } from "@firebase/auth";
 
 const BotonGitHub = () => {
     return(
