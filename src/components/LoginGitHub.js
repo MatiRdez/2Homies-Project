@@ -18,7 +18,7 @@ const BotonGitHub = () => {
 
     return(
         <div>
-            <button>Continuar con GitHub</button>
+            <button onClick={IniciarConGitHub}>Continuar con GitHub</button>
         </div>
     )
 }
