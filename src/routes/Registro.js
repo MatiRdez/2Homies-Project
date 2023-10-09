@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../components/styles/Registro.css';
 import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
 
