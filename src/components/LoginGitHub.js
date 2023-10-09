@@ -1,5 +1,6 @@
 import React from "react";
 import GitHub from './images/GitHub.png';
+import BotonGitHub from './styles/BotonGitHub.css';
 import { auth } from "../firebaseConfig";
 import { GithubAuthProvider, signInWithPopup } from "@firebase/auth";
 

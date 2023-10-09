@@ -1,5 +1,6 @@
 import React from "react";
 import Google from './images/Google.png';
+import BotonGoogle from './styles/BotonGoogle.css';
 import { auth } from "../firebaseConfig";
 import { GoogleAuthProvider, signInWithPopup } from "@firebase/auth";
 
