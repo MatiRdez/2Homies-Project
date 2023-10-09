@@ -1,6 +1,6 @@
 import React from "react";
 import Google from './images/Google.png';
-import BotonGoogle from './styles/BotonGoogle.css';
+import './styles/BotonGoogle.css';
 import { auth } from "../firebaseConfig";
 import { GoogleAuthProvider, signInWithPopup } from "@firebase/auth";
 
@@ -19,7 +19,7 @@ const BotonGoogle = () => {
     }
 
     return(
-        <div>
+        <div className="boton-google">
             <button onClick={IniciarConGoogle}><img src={Google}></img>Continuar con Google</button>
         </div>
     )
