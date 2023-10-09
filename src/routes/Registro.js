@@ -22,7 +22,7 @@ const Registro = () => {
     }
 
     return(
-        <div>
+        <div className="form-registro">
             <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
                 <input id="correo" type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
