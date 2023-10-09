@@ -19,7 +19,7 @@ const BotonGoogle = () => {
 
     return(
         <div>
-            <button onClick={IniciarConGoogle}>Continuar con Google</button>
+            <button onClick={IniciarConGoogle}><img src={Google}></img>Continuar con Google</button>
         </div>
     )
 }
