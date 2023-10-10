@@ -24,3 +24,7 @@ input{
 #enviar:hover{
     transform: scale(1.15);
 }
+
+.botones button{
+    margin-top: 5px;
+}

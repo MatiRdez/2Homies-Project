@@ -31,8 +31,10 @@ const Login = () => {
                 <input id="pass" type="password" onChange={(e) => setPassword(e.target.value)}></input>
                 <input id="enviar" type="submit" value="Acceder"></input>
             </form>
-            <BotonGoogle/>
-            <BotonGitHub/>
+            <div className="botones">
+                <BotonGoogle/>
+                <BotonGitHub/>
+            </div>
         </div>
     )
 }
