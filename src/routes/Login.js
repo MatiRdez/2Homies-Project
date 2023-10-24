@@ -27,6 +27,11 @@ const Login = () => {
                     if(error.code === 'auth/user-not-found'){
                         alert("El usuario no está registrado")
                     }
+                    else{
+                        if(error.code === 'auth/wrong-password'){
+                            alert("La contraseña es incorrecta");
+                        }
+                    }
                 }
             })
     }
