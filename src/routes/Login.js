@@ -35,6 +35,7 @@ const Login = () => {
             <div className="botones">
                 <BotonGoogle/>
                 <BotonGitHub/>
+                <BotonAnonimo/>
             </div>
         </div>
     )
