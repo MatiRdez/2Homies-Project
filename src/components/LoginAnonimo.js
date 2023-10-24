@@ -1,4 +1,5 @@
 import React from "react";
+import Anonimo from "./images/Anonimo.png";
 import { auth } from "../firebaseConfig";
 import { signInAnonymously } from "firebase/auth";
 
@@ -16,7 +17,7 @@ const BotonAnonimo = () => {
 
     return(
         <div>
-            <button onClick={IniciarAnonimo}>Continuar como anónimo</button>
+            <button onClick={IniciarAnonimo}><img src={Anonimo}></img>Continuar como anónimo</button>
         </div>
     )
 }
