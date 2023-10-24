@@ -19,7 +19,10 @@ const Login = () => {
                 alert("Logeado correctamente");
             })
             .catch((error) => {
-                console.log(error);
+                console.log(error.code);
+                if(error.code === 'auth/invalid-email'){
+                    alert("Ingrese un correo electrónico válido");
+                }
             })
     }
 
