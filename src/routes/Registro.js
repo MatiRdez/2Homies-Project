@@ -21,6 +21,11 @@ const Registro = () => {
                 if(error.code === 'auth/invalid-email'){
                     alert("Ingrese un correo electrónico válido");
                 }
+                else{
+                    if(error.code === 'auth/email-already-in-use'){
+                        alert("El correo electrónico que ingresó ya está en uso, intente con otro");
+                    }
+                }
             })
     }
 
