@@ -17,7 +17,7 @@ const BotonAnonimo = () => {
     }
 
     return(
-        <div>
+        <div className="boton-anonimo">
             <button onClick={IniciarAnonimo}><img src={Anonimo}></img>Continuar como anónimo</button>
         </div>
     )
