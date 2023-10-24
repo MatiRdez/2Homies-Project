@@ -25,6 +25,9 @@ const Registro = () => {
                     if(error.code === 'auth/email-already-in-use'){
                         alert("El correo electrónico que ingresó ya está en uso, intente con otro");
                     }
+                    else{
+                        alert("Por favor, complete los campos correctamente");
+                    }
                 }
             })
     }
