@@ -18,6 +18,9 @@ const Registro = () => {
             })
             .catch((error) => {
                 console.log(error);
+                if(error.code === 'auth/invalid-email'){
+                    alert("Ingrese un correo electrónico válido");
+                }
             })
     }
 
