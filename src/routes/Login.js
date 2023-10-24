@@ -4,6 +4,7 @@ import { auth } from "../firebaseConfig";
 import { signInWithEmailAndPassword } from "@firebase/auth";
 import BotonGoogle from "../components/LoginGoogle";
 import BotonGitHub from "../components/LoginGitHub";
+import BotonAnonimo from "../components/LoginAnonimo";
 
 const Login = () => {
 
