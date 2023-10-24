@@ -23,6 +23,11 @@ const Login = () => {
                 if(error.code === 'auth/invalid-email'){
                     alert("Ingrese un correo electrónico válido");
                 }
+                else{
+                    if(error.code === 'auth/user-not-found'){
+                        alert("El usuario no está registrado")
+                    }
+                }
             })
     }
 
