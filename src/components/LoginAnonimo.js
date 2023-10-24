@@ -5,7 +5,13 @@ import { signInAnonymously } from "firebase/auth";
 const BotonAnonimo = () => {
 
     const IniciarAnonimo = () => {
-        
+        signInAnonymously(auth)
+            .then((result) => {
+                alert("Ingresó correctamente");
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
 
     return(
