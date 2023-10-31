@@ -5,18 +5,19 @@ import { signInWithEmailAndPassword } from "@firebase/auth";
 import BotonGoogle from "../components/LoginGoogle";
 import BotonGitHub from "../components/LoginGitHub";
 import BotonAnonimo from "../components/LoginAnonimo";
-
+import { useNavigate } from "react-router-dom";
 const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    
     const Datos = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 console.log(userCredential);
                 alert("Logeado correctamente");
+               
             })
             .catch((error) => {
                 console.log(error.code);
