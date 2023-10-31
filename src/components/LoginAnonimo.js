@@ -10,7 +10,7 @@ const BotonAnonimo = () => {
         signInAnonymously(auth)
             .then((result) => {
                 alert("Ingresó correctamente");
-                
+                navigate("/home");
             })
             .catch((error) => {
                 console.log(error);
