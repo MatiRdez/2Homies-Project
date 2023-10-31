@@ -6,7 +6,7 @@ import BotonGoogle from "../components/LoginGoogle";
 import BotonGitHub from "../components/LoginGitHub";
 import BotonAnonimo from "../components/LoginAnonimo";
 import { useNavigate, NavLink } from "react-router-dom";
-
+import BotonLogin from "../components/BotonLogin";
 const Login = () => {
 
     const [email, setEmail] = useState('');
