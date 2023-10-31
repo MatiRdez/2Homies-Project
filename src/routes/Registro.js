@@ -3,7 +3,7 @@ import '../components/styles/Registro.css';
 import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
 import { NavLink } from "react-router-dom";
-
+import BotonLogin from '../components/BotonLogin';
 const Registro = () => {
 
     const [email, setEmail] = useState('');
