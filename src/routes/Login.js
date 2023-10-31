@@ -40,7 +40,7 @@ const Login = () => {
 
     return(
         <div className="form">
-       
+            <NavLink to='/registro'><BotonLogin texto='Registrarse'/></NavLink>
             <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
                 <input id="correo" type="text" onChange={(e) => setEmail(e.target.value)}></input>
