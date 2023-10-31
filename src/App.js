@@ -5,6 +5,7 @@ import BotonLogin from './components/BotonLogin';
 import Login from './routes/Login';
 import Registro from './routes/Registro';
 import { BrowserRouter, Link, Route, Routes, NavLink } from 'react-router-dom';
+import Home from './components/Home';
 
 function App() {
   return (
