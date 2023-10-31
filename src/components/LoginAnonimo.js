@@ -5,7 +5,7 @@ import { auth } from "../firebaseConfig";
 import { signInAnonymously } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 const BotonAnonimo = () => {
-    
+    const navigate = useNavigate();
     const IniciarAnonimo = () => {
         signInAnonymously(auth)
             .then((result) => {
