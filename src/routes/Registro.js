@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../components/styles/Registro.css';
 import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
+import { NavLink } from "react-router-dom";
 
 const Registro = () => {
 
@@ -34,6 +35,7 @@ const Registro = () => {
 
     return(
         <div className="form-registro">
+            
             <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
                 <input id="correo" type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
