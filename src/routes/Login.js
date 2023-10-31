@@ -10,7 +10,7 @@ const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    
+    const navigate = useNavigate();
     const Datos = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
