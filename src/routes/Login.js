@@ -5,7 +5,8 @@ import { signInWithEmailAndPassword } from "@firebase/auth";
 import BotonGoogle from "../components/LoginGoogle";
 import BotonGitHub from "../components/LoginGitHub";
 import BotonAnonimo from "../components/LoginAnonimo";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
+
 const Login = () => {
 
     const [email, setEmail] = useState('');
@@ -39,6 +40,7 @@ const Login = () => {
 
     return(
         <div className="form">
+       
             <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
                 <input id="correo" type="text" onChange={(e) => setEmail(e.target.value)}></input>
