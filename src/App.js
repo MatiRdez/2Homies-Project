@@ -12,9 +12,8 @@ function App() {
     <div>
       <LogoApp/>
       <BrowserRouter>
-        <NavLink to='/login'><BotonLogin texto='Iniciar sesión'/></NavLink>
-        <NavLink to='/registro'><BotonLogin texto='Registrarse'/></NavLink>
         <Routes>
+         <Route path='/' element={<Login/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/registro' element={<Registro/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
