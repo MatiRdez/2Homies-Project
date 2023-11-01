@@ -5,7 +5,7 @@ import { signOut } from "firebase/auth";
 const Salir = () => {
     return(
         <div>
-
+            <button>Cerrar sesión</button>
         </div>
     )
 }
