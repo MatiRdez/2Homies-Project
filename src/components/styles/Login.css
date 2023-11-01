@@ -27,14 +27,15 @@ input{
 #enviar{
     width: 80px;
     height: 25px;
-    border-color: rgb(179, 138, 138);
-    background-color: rgb(194, 132, 132);
-    color: white;
+    border-color: rgb(255, 217, 147);
+    background-color: rgb(255, 217, 147);
+    color: rgb(0, 0, 0);
     transition: transform 0.3s ease;
     border-radius: 25px;
     margin-left: 95px;
     margin-bottom: 25px;
     font-family: 'Raleway', sans-serif;
+    padding: 2px;
 }
 
 #enviar:hover{
