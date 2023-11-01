@@ -5,7 +5,13 @@ import { signOut } from "firebase/auth";
 const Salir = () => {
 
     const CerrarSesion = () => {
-        
+        signOut(auth)
+            .then(() => {
+                console.log("Sesión cerrada correctamente")
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
 
     return(
