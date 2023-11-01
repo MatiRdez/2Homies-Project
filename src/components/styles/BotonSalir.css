@@ -6,4 +6,5 @@ button{
 button:hover{
     background-color: brown;
     color: white;
+    transition: 0.15s;
 }
