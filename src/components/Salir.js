@@ -20,7 +20,7 @@ const Salir = () => {
 
     return(
         <div>
-            <button>Cerrar sesión</button>
+            <button onClick={CerrarSesion}>Cerrar sesión</button>
         </div>
     )
 }
