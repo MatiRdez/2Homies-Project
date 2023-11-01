@@ -11,6 +11,7 @@ const Salir = () => {
         signOut(auth)
             .then(() => {
                 console.log("Sesión cerrada correctamente")
+                navigate("/")
             })
             .catch((error) => {
                 console.log(error);
