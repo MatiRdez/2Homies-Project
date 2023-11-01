@@ -1,6 +1,7 @@
 button{
     height: 30px;
     background-color: white;
+    cursor: pointer;
 }
 
 button:hover{
