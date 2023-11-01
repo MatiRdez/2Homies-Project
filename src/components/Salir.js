@@ -10,7 +10,7 @@ const Salir = () => {
     const CerrarSesion = () => {
         signOut(auth)
             .then(() => {
-                console.log("Sesión cerrada correctamente")
+                alert("Sesión cerrada correctamente")
                 navigate("/")
             })
             .catch((error) => {
