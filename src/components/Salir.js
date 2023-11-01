@@ -24,3 +24,5 @@ const Salir = () => {
         </div>
     )
 }
+
+export default Salir;
