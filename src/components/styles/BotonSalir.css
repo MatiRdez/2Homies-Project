@@ -1,10 +1,10 @@
-button{
+.salir button{
     height: 30px;
     background-color: white;
     cursor: pointer;
 }
 
-button:hover{
+.salir button:hover{
     background-color: brown;
     color: white;
     transition: 0.15s;
