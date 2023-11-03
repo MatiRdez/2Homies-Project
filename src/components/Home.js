@@ -11,7 +11,10 @@ const Home = (props) => {
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle" />
                 <div className="navbar"> 
-                    
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        
+                    </ul>   
                 </div>
             </div>
         </div>
