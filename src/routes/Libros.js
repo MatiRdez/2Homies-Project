@@ -19,6 +19,7 @@ const Libros = () => {
                 type="text"
                 placeholder="Autor"
                 value={autor}
+                onChange={(e) => setAutor(e.target.value)}
             />
             <button>Agregar libro</button>
         </div>
