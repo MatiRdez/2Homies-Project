@@ -15,7 +15,7 @@ const Home = (props) => {
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Navegar</a></li>
                         <li><a href="#">Libros</a></li>
-                        
+                        <li><a href="#">Buscar</a></li>
                     </ul>   
                 </div>
             </div>
