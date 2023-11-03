@@ -60,5 +60,27 @@
     right: 0;
     transform: translateX(0); /* Trae el menú de nuevo a la pantalla */
   }
+   /* Estilos para pantallas más pequeñas (móviles) */
+   @media screen and (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .toggle-button {
+      font-size: 20px;
+    }
+  
+    .navbar {
+      width: 100%;
+    }
+  
+    .section-button {
+      font-size: 16px;
+    }
+  
+    .logout-button {
+      font-size: 16px;
+    }
+  }
   
  
