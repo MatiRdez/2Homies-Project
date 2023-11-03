@@ -7,8 +7,13 @@ const Libros = () => {
     const [titulo, setTitulo] = useState("");
     const [autor, setAutor] = useState("");
 
-    const BotonCrearLibro = () =>{
-        
+    const BotonCrearLibro = async () =>{
+        try{
+            const docRef = await addDoc(collection(db, "Libros"), {
+                Título: titulo,
+                Autor: autor,
+            });
+        }
     }
 
     return(
