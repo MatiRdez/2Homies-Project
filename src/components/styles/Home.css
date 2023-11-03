@@ -23,4 +23,17 @@
     color: #fff;
   }
   
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 250px;
+    background-color: #222;
+    padding: 20px;
+    transition: right 0.5s;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%); /* Desplaza el menú fuera de la pantalla */
+  }
+  
  
