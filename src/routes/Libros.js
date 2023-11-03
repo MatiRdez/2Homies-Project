@@ -17,6 +17,9 @@ const Libros = () => {
             setTitulo("");
             setAutor("");
         }
+        catch(error){
+            console.log("Error al agregar el documento: ", error);
+        }
     }
 
     return(
