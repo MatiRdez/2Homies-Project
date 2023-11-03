@@ -5,7 +5,11 @@ import { db } from "./firebase";
 const Libros = () => {
     return(
         <div>
-            
+            <input
+                type="text"
+                placeholder="Título"
+                value={titulo}
+            />
         </div>
     )
 }
