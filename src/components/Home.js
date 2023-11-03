@@ -10,7 +10,9 @@ const Home = (props) => {
                 <img src="logo.png" alt="Logo" />
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle" />
-                
+                <div className="navbar"> 
+                    
+                </div>
             </div>
         </div>
           <Salir/>
