@@ -38,7 +38,7 @@ const Home = (props) => {
     <p>Descripción del Libro 2</p>
   </div>
 
-  <!-- Agrega más libros aquí -->
+ 
   
 </div>
 
