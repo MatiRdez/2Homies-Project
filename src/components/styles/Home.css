@@ -1,0 +1,26 @@
+/* Estilos para el encabezado y el botón de abrir el menú */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .header img {
+    height: 50px;
+  }
+  
+  #toggle {
+    display: none;
+  }
+  
+  .toggle-button {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+  }
+  
+ 
