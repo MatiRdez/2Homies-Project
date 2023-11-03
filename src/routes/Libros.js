@@ -10,6 +10,11 @@ const Libros = () => {
                 placeholder="Título"
                 value={titulo}
             />
+            <input
+                type="text"
+                placeholder="Autor"
+                value={autor}
+            />
         </div>
     )
 }
