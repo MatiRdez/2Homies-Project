@@ -36,7 +36,7 @@ const Libros = () => {
                 value={autor}
                 onChange={(e) => setAutor(e.target.value)}
             />
-            <button>Agregar libro</button>
+            <button onClick={BotonCrearLibro}>Agregar libro</button>
         </div>
     )
 }
