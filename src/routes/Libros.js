@@ -5,6 +5,7 @@ import { db } from "./firebase";
 const Libros = () => {
 
     const [titulo, setTitulo] = useState("");
+    const [autor, setAutor] = useState("");
 
     return(
         <div>
