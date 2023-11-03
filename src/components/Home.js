@@ -13,7 +13,8 @@ const Home = (props) => {
                 <div className="navbar"> 
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        
+                        <li><a href="#">Navegar</a></li>
+                       
                     </ul>   
                 </div>
             </div>
