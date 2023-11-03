@@ -15,6 +15,7 @@ const Libros = () => {
                 placeholder="Autor"
                 value={autor}
             />
+            <button>Agregar libro</button>
         </div>
     )
 }
