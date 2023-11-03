@@ -13,6 +13,7 @@ const Libros = () => {
                 type="text"
                 placeholder="Título"
                 value={titulo}
+                onChange={(e) => setTitulo(e.target.value)}
             />
             <input
                 type="text"
