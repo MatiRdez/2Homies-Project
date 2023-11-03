@@ -36,4 +36,29 @@
     transform: translateX(100%); /* Desplaza el menú fuera de la pantalla */
   }
   
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+  
+  .navbar a:hover {
+    color: #4CAF50;
+  }
+  
+  #toggle:checked + .navbar {
+    right: 0;
+    transform: translateX(0); /* Trae el menú de nuevo a la pantalla */
+  }
+  
  
