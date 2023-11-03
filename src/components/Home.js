@@ -5,21 +5,19 @@ import "./styles/Home.css";
 const Home = (props) => {
     return(
         <>
-          <h1>Bienvenidos!</h1>
-<div>
-  <div className="header">
-    <img src="logo.png" alt="Logo" />
-    <label for="toggle">☰</label>
-    <input class="check" type="checkbox" id="toggle" />
-    <div className="navbar">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Navegar</a></li>
-        <li><a href="#">Libros</a></li>
-        <li><a href="#">Buscar</a></li>
-        <li><Salir/></li>
-      </ul>
-    </div>
+      <div className="header">
+  <img src="logo.png" alt="Logo" className="logo" />
+  <h1>Bienvenidos!</h1>
+  <label for="toggle">☰</label>
+  <input class="check" type="checkbox" id="toggle" />
+  <div className="navbar">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Navegar</a></li>
+      <li><a href="#">Libros</a></li>
+      <li><a href="#">Buscar</a></li>
+      <li><Salir/></li>
+    </ul>
   </div>
 </div>
 
@@ -37,12 +35,12 @@ const Home = (props) => {
     <p>Autor: Autor del Libro 2</p>
     <p>Descripción del Libro 2</p>
   </div>
+  
 
- 
+
   
 </div>
 
-          
         </>
     )
 }
