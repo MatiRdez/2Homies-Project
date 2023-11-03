@@ -40,3 +40,5 @@ const Libros = () => {
         </div>
     )
 }
+
+export default Libros;
