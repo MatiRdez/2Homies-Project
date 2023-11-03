@@ -13,6 +13,9 @@ const Libros = () => {
                 Título: titulo,
                 Autor: autor,
             });
+            console.log("Documento agregado correctamente con ID: ", docRef.id);
+            setTitulo("");
+            setAutor("");
         }
     }
 
