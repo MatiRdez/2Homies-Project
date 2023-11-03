@@ -7,6 +7,10 @@ const Libros = () => {
     const [titulo, setTitulo] = useState("");
     const [autor, setAutor] = useState("");
 
+    const BotonCrearLibro = () =>{
+        
+    }
+
     return(
         <div>
             <input
