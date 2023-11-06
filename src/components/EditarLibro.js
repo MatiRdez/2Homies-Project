@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDoc, updateDoc, doc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const EditarLibro = () => {
 
     const { libroId } = useParams();
-    
+
+    const navigate = useNavigate();
+
     const [libro, setLibro] = useState({});
     const [nuevoTitulo, setNuevoTitulo] = useState("");
     const [nuevoAutor, setNuevoAutor] = useState("");
@@ -32,6 +34,8 @@ const EditarLibro = () => {
                 Autor: nuevoAutor,
                 Género: nuevoGenero,
             });
+            alert("Libro actualizado correctamente");
+            navigate("/listar-libros");
         }catch(error){
             console.error("Error al actualizar el libro: ", error);
         }
