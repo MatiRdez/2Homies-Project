@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDoc, updateDoc, doc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import { useParams } from "react-router-dom";
 
-const EditarLibro = ({libroId}) => {
+const EditarLibro = () => {
 
+    const { libroId } = useParams();
+    
     const [libro, setLibro] = useState({});
     const [nuevoTitulo, setNuevoTitulo] = useState("");
     const [nuevoAutor, setNuevoAutor] = useState("");
@@ -39,16 +42,16 @@ const EditarLibro = ({libroId}) => {
             <input
                 type="text"
                 placeholder="Actualizar título"
-                value={titulo}
+                value={nuevoTitulo}
                 onChange={(e) => setNuevoTitulo(e.target.value)}
             />
             <input
                 type="text"
                 placeholder="Actualizar autor"
-                value={autor}
+                value={nuevoAutor}
                 onChange={(e) => setNuevoAutor(e.target.value)}
             />
-            <select value={genero} onChange={(e) => setNuevoGenero(e.target.value)}>
+            <select value={nuevoGenero} onChange={(e) => setNuevoGenero(e.target.value)}>
                 <option value="Acción">Acción</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>

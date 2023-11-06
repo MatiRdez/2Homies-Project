@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import { Link } from "react-router-dom"
+import EditarLibro from "./EditarLibro";
 
 const ListarLibros = () => {
 
@@ -25,7 +27,7 @@ const ListarLibros = () => {
                 {libros.map((libro) => (
                     <li key={libro.id}>
                         <strong>Título:</strong> {libro.Título}, <strong>Autor:</strong> {libro.Autor}, <strong>Género:</strong> {libro.Género}
-                        <button>Modificar</button>
+                        <button><Link to={`/editar-libro/${libro.id}`}>Modificar</Link></button>
                         <button>Eliminar</button>
                     </li>
                 ))}

@@ -8,6 +8,7 @@ import { BrowserRouter, Link, Route, Routes, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import AgregarLibros from './components/AgregarLibros.js';
 import ListarLibros from './components/ListarLibros.js';
+import EditarLibro from "./components/EditarLibro.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/home' element={<Home/>}></Route>
           <Route path='/agregar-libros' element={<AgregarLibros/>}></Route>
           <Route path='/listar-libros' element={<ListarLibros/>}></Route>
+          <Route path='/editar-libro/:libroId' element={<EditarLibro/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
