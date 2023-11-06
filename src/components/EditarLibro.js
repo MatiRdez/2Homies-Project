@@ -53,7 +53,7 @@ const EditarLibro = ({libroId}) => {
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>
             </select>
-            <button>Actualizar libro</button>
+            <button onClick={GuardarCambios}>Actualizar libro</button>
         </div>
     )
 }
