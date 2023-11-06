@@ -20,7 +20,14 @@ const ListarLibros = () => {
 
     return(
         <div>
-
+            <h1>Lista de libros</h1>
+            <ul>
+                {libros.map((libro) => (
+                    <li key={libro.id}>
+                        <p>Título:</p> {libro.Título}, <p>Autor:</p> {libro.Autor}, <p>Género:</p> {libro.Género}
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
