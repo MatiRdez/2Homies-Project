@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 
-const Libros = () => {
+const AgregarLibros = () => {
 
     const [titulo, setTitulo] = useState("");
     const [autor, setAutor] = useState("");
@@ -49,4 +49,4 @@ const Libros = () => {
     )
 }
 
-export default Libros;
+export default AgregarLibros;
