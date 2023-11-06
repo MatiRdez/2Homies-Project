@@ -3,6 +3,12 @@ import { collection, getDoc, updateDoc, doc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 
 const EditarLibro = () => {
+
+    const [libro, setLibro] = useState({});
+    const [nuevoTitulo, setNuevoTitulo] = useState("");
+    const [nuevoAutor, setNuevoAutor] = useState("");
+    const [nuevoGenero, setNuevoGenero] = useState("");
+
     return(
         <div>
             <input
