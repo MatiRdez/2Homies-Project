@@ -31,3 +31,5 @@ const ListarLibros = () => {
         </div>
     )
 }
+
+export default ListarLibros;
