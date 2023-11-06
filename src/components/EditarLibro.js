@@ -22,6 +22,18 @@ const EditarLibro = ({libroId}) => {
         obtenerLibro();
     }, [libroId]);
 
+    const GuardarCambios = async () => {
+        try{
+            await updateDoc(doc(db, "Libros", libroId), {
+                Título: nuevoTitulo,
+                Autor: nuevoAutor,
+                Género: nuevoGenero,
+            });
+        }catch(error){
+            console.error("Error al actualizar el libro: ", error);
+        }
+    };
+
     return(
         <div>
             <input
