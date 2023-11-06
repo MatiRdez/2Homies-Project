@@ -40,13 +40,15 @@ const EditarLibro = ({libroId}) => {
                 type="text"
                 placeholder="Actualizar título"
                 value={titulo}
+                onChange={(e) => setNuevoTitulo(e.target.value)}
             />
             <input
                 type="text"
                 placeholder="Actualizar autor"
                 value={autor}
+                onChange={(e) => setNuevoAutor(e.target.value)}
             />
-            <select value={genero}>
+            <select value={genero} onChange={(e) => setNuevoGenero(e.target.value)}>
                 <option value="Acción">Acción</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>
