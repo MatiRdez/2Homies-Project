@@ -12,7 +12,6 @@ import ListarLibros from './components/ListarLibros.js';
 function App() {
   return (
     <div>
-      <LogoApp/>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login/>}></Route>

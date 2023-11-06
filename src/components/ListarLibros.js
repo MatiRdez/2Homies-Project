@@ -24,7 +24,7 @@ const ListarLibros = () => {
             <ul>
                 {libros.map((libro) => (
                     <li key={libro.id}>
-                        <p>Título:</p> {libro.Título}, <p>Autor:</p> {libro.Autor}, <p>Género:</p> {libro.Género}
+                        <strong>Título:</strong> {libro.Título}, <strong>Autor:</strong> {libro.Autor}, <strong>Género:</strong> {libro.Género}
                     </li>
                 ))}
             </ul>
