@@ -7,6 +7,7 @@ import Registro from './routes/Registro';
 import { BrowserRouter, Link, Route, Routes, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import AgregarLibros from './components/AgregarLibros.js';
+import ListarLibros from './components/ListarLibros.js';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/registro' element={<Registro/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
           <Route path='/agregar-libros' element={<AgregarLibros/>}></Route>
+          <Route path='/listar-libros' element={<ListarLibros/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
