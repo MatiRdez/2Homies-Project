@@ -57,3 +57,5 @@ const EditarLibro = ({libroId}) => {
         </div>
     )
 }
+
+export default EditarLibro;
