@@ -16,7 +16,7 @@ const Menu = () => {
         <NavLink to='/Navegar'><li>Navegar</li></NavLink>
         <li><a href="#">Libros</a></li>
           <SearchBooks className="busc"></SearchBooks>
-          
+          <li><Salir/></li>
         </ul>
         
       </div>
