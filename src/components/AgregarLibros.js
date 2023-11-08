@@ -41,6 +41,7 @@ const AgregarLibros = () => {
                 onChange={(e) => setAutor(e.target.value)}
             />
             <select value={genero} onChange={(e) => setGenero(e.target.value)}>
+                <option>Seleccionar género</option>
                 <option value="Acción">Acción</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>

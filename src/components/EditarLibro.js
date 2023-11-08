@@ -56,6 +56,7 @@ const EditarLibro = () => {
                 onChange={(e) => setNuevoAutor(e.target.value)}
             />
             <select value={nuevoGenero} onChange={(e) => setNuevoGenero(e.target.value)}>
+                <option>Seleccionar género</option>
                 <option value="Acción">Acción</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>
