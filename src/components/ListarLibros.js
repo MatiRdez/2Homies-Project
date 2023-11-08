@@ -3,6 +3,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import { Link } from "react-router-dom"
 import EditarLibro from "./EditarLibro";
+import EliminarLibro from "./EliminarLibro";
 
 const ListarLibros = () => {
 
@@ -28,7 +29,7 @@ const ListarLibros = () => {
                     <li key={libro.id}>
                         <strong>Título:</strong> {libro.Título}, <strong>Autor:</strong> {libro.Autor}, <strong>Género:</strong> {libro.Género}
                         <button><Link to={`/editar-libro/${libro.id}`}>Modificar</Link></button>
-                        <button>Eliminar</button>
+                        <EliminarLibro libroId={libro.id}/>
                     </li>
                 ))}
             </ul>

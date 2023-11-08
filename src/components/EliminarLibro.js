@@ -3,7 +3,7 @@ import { collection, getDoc, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import { useParams, useNavigate } from "react-router-dom";
 
-const EliminarLibro = () => {
+const EliminarLibro = ({libroId}) => {
 
     const BotonEliminar = async () => {
         try{
