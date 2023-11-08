@@ -7,4 +7,40 @@
   width: 500px;
 }
 
+.genre-box {
+  width: 80px;
+  height: 80px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.genre-box:hover {
+  transform: scale(1.1);
+  background-color: #e74c3c;
+}
+
+.mystery {
+  background-color: #3498db;
+}
+
+.romance {
+  background-color: #e74c3c;
+}
+
+.fantasy {
+  background-color: #2ecc71;
+}
+
+.scifi {
+  background-color: #f1c40f;
+}
+
+.thriller {
+  background-color: #9b59b6;
+}
+
   
