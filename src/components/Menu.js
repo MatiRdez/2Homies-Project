@@ -10,7 +10,13 @@ const Menu = () => {
       <h1>Bienvenidos!</h1>
       <label for="toggle">☰</label>
       <input class="check" type="checkbox" id="toggle" />
-      
+      <div className="navbar">
+        <ul>
+        <NavLink to='/Home'><li>Inicio</li></NavLink>
+          
+        </ul>
+        
+      </div>
       </div>
     )
 }
