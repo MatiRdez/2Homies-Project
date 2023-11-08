@@ -22,3 +22,5 @@ const EliminarLibro = () => {
         </div>
     )
 }
+
+export default EliminarLibro;
