@@ -33,6 +33,7 @@ const ListarLibros = () => {
                     </li>
                 ))}
             </ul>
+            <button><Link to={"/agregar-libros"}>Agregar libros (+)</Link></button>
         </div>
     )
 }
