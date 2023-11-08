@@ -5,7 +5,10 @@ import "./styles/Categorias.css"
 
 const Categorias = () => {
   return (
-    
+    <div>
+      <Menu></Menu>
+      
+    </div>
   )
 }
 export default Categorias;
