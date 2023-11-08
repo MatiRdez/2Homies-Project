@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import { Link } from "react-router-dom";
 
 const AgregarLibros = () => {
 
@@ -45,6 +46,7 @@ const AgregarLibros = () => {
                 <option value="Terror">Terror</option>
             </select>
             <button onClick={BotonCrearLibro}>Agregar libro</button>
+            <button><Link to={"/listar-libros"}>Ver lista de libros</Link></button>
         </div>
     )
 }
