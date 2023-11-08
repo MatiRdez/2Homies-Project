@@ -23,7 +23,7 @@ function App() {
           <Route path='/agregar-libros' element={<AgregarLibros/>}></Route>
           <Route path='/listar-libros' element={<ListarLibros/>}></Route>
           <Route path='/editar-libro/:libroId' element={<EditarLibro/>}></Route>
-          
+          <Route path='/Navegar' element={<Categorias/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
