@@ -14,6 +14,8 @@ const Menu = () => {
         <ul>
         <NavLink to='/Home'><li>Inicio</li></NavLink>
         <NavLink to='/Navegar'><li>Navegar</li></NavLink>
+        <li><a href="#">Libros</a></li>
+          <SearchBooks className="busc"></SearchBooks>
           
         </ul>
         
