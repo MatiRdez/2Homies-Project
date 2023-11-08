@@ -13,6 +13,7 @@ const Menu = () => {
       <div className="navbar">
         <ul>
         <NavLink to='/Home'><li>Inicio</li></NavLink>
+        <NavLink to='/Navegar'><li>Navegar</li></NavLink>
           
         </ul>
         
