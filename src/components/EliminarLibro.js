@@ -18,7 +18,7 @@ const EliminarLibro = () => {
 
     return(
         <div>
-            
+            <button>Eliminar</button>
         </div>
     )
 }
