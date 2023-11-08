@@ -18,7 +18,7 @@ const EliminarLibro = () => {
 
     return(
         <div>
-            <button>Eliminar</button>
+            <button onClick={BotonEliminar}>Eliminar</button>
         </div>
     )
 }
