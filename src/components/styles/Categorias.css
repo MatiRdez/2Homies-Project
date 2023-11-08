@@ -1,19 +1,17 @@
-
-
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Centrar horizontalmente */
   align-items: center;
-  width: 500px;
+  width: 100%; /* Ancho al 100% del contenedor padre */
 }
 
 .genre-box {
-  width: 80px;
-  height: 80px;
+  width: 120px; /* Aumentar el ancho */
+  height: 120px; /* Aumentar la altura */
   background-color: #3498db;
   color: #fff;
   text-align: center;
-  line-height: 80px;
+  line-height: 120px; /* Ajustar el line-height para centrar verticalmente el texto */
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
 }
@@ -42,5 +40,3 @@
 .thriller {
   background-color: #9b59b6;
 }
-
-  
