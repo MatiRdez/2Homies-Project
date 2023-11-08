@@ -5,9 +5,16 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const EliminarLibro = () => {
 
-    const BotonEliminar = () => {
-        
-    }
+    const BotonEliminar = async () => {
+        try{
+            const libroRef = doc(db, "Libros", libroId);
+            await deleteDoc(libroRef);
+            alert("Libro eliminado con éxito");
+        }
+        catch(error){
+            console.error("Error al eliminar el libro:", error);
+        }
+    };
 
     return(
         <div>
