@@ -4,6 +4,11 @@ import { db } from "../firebaseConfig";
 import { useParams, useNavigate } from "react-router-dom";
 
 const EliminarLibro = () => {
+
+    const BotonEliminar = () => {
+        
+    }
+
     return(
         <div>
             
