@@ -8,7 +8,7 @@ import Menu from "./Menu";
 const Home = (props) => {
     return(
         <>
-         
+          <Menu></Menu>
           <div className="book-list">
           <div className="book">
             <img src="book1.jpg" alt="Libro 1" />
