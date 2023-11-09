@@ -15,6 +15,7 @@ const EditarLibro = () => {
     const [nuevoGenero, setNuevoGenero] = useState("");
     const [nuevoDescripcion, setNuevoDescripcion] = useState("");
     const [nuevoFecha, setNuevoFecha] = useState("");
+    const [nuevoPortada, setNuevoPortada] = useState("");
 
     useEffect(() => {
         const obtenerLibro = async () => {
@@ -37,6 +38,7 @@ const EditarLibro = () => {
                 Género: nuevoGenero,
                 Descripción: nuevoDescripcion,
                 Fecha: nuevoFecha,
+                Portada: nuevoPortada,
             });
             alert("Libro actualizado correctamente");
             navigate("/listar-libros");
@@ -71,6 +73,13 @@ const EditarLibro = () => {
                 placeholder="Año de publicación"
                 value={nuevoFecha}
                 onChange={(e) => setNuevoFecha(e.target.value)}
+            />
+            <label for="imagen">Imagen de portada</label>
+            <input
+                id="imagen"
+                type="file"
+                value={nuevoPortada}
+                onChange={(e) => setNuevoPortada(e.target.value)}
             />
             <button onClick={GuardarCambios}>Actualizar libro</button>
         </div>
