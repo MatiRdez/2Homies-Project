@@ -10,6 +10,7 @@ const AgregarLibros = () => {
     const [genero, setGenero] = useState("");
     const [descripcion, setDescripcion] = useState("");
     const [fecha, setFecha] = useState("");
+    const [portada, setPortada] = useState("");
 
     const BotonCrearLibro = async () =>{
         try{
@@ -19,6 +20,7 @@ const AgregarLibros = () => {
                 Género: genero,
                 Descripción: descripcion,
                 Fecha: fecha,
+                Portada: portada,
             });
             console.log("Documento agregado correctamente con ID: ", docRef.id);
             setTitulo("");
@@ -26,6 +28,7 @@ const AgregarLibros = () => {
             setGenero("");
             setDescripcion("");
             setFecha("");
+            setPortada("");
         }
         catch(error){
             console.log("Error al agregar el documento: ", error);
@@ -58,6 +61,13 @@ const AgregarLibros = () => {
                 placeholder="Año de publicación"
                 value={fecha}
                 onChange={(e) => setFecha(e.target.value)}
+            />
+            <label for="imagen">Imagen de portada</label>
+            <input
+                id="imagen"
+                type="file"
+                value={portada}
+                onChange={(e) => setPortada(e.target.value)}
             />
             <button onClick={BotonCrearLibro}>Agregar libro</button>
             <button><Link to={"/listar-libros"}>Ver lista de libros</Link></button>
