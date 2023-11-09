@@ -9,6 +9,7 @@ const AgregarLibros = () => {
     const [autor, setAutor] = useState("");
     const [genero, setGenero] = useState("");
     const [descripcion, setDescripcion] = useState("");
+    const [fecha, setFecha] = useState("");
 
     const BotonCrearLibro = async () =>{
         try{
@@ -17,12 +18,14 @@ const AgregarLibros = () => {
                 Autor: autor,
                 Género: genero,
                 Descripción: descripcion,
+                Fecha: fecha,
             });
             console.log("Documento agregado correctamente con ID: ", docRef.id);
             setTitulo("");
             setAutor("");
             setGenero("");
             setDescripcion("");
+            setFecha("");
         }
         catch(error){
             console.log("Error al agregar el documento: ", error);
@@ -50,6 +53,12 @@ const AgregarLibros = () => {
                 <option value="Terror">Terror</option>
             </select>
             <textarea placeholder="Descripción..." value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></textarea>
+            <input
+                type="number"
+                placeholder="Año de publicación"
+                value={fecha}
+                onChange={(e) => setFecha(e.target.value)}
+            />
             <button onClick={BotonCrearLibro}>Agregar libro</button>
             <button><Link to={"/listar-libros"}>Ver lista de libros</Link></button>
         </div>
