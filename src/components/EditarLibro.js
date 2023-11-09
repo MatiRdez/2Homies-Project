@@ -16,6 +16,7 @@ const EditarLibro = () => {
     const [nuevoDescripcion, setNuevoDescripcion] = useState("");
     const [nuevoFecha, setNuevoFecha] = useState("");
     const [nuevoPortada, setNuevoPortada] = useState("");
+    const [nuevoURL, setNuevoURL] = useState("");
 
     useEffect(() => {
         const obtenerLibro = async () => {
@@ -39,6 +40,7 @@ const EditarLibro = () => {
                 Descripción: nuevoDescripcion,
                 Fecha: nuevoFecha,
                 Portada: nuevoPortada,
+                URL: nuevoURL,
             });
             alert("Libro actualizado correctamente");
             navigate("/listar-libros");
@@ -80,6 +82,12 @@ const EditarLibro = () => {
                 type="file"
                 value={nuevoPortada}
                 onChange={(e) => setNuevoPortada(e.target.value)}
+            />
+            <input
+                type="url"
+                placeholder="URL del libro"
+                value={nuevoURL}
+                onChange={(e) => setNuevoURL(e.target.value)}
             />
             <button onClick={GuardarCambios}>Actualizar libro</button>
         </div>
