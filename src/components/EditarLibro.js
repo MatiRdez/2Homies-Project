@@ -13,6 +13,7 @@ const EditarLibro = () => {
     const [nuevoTitulo, setNuevoTitulo] = useState("");
     const [nuevoAutor, setNuevoAutor] = useState("");
     const [nuevoGenero, setNuevoGenero] = useState("");
+    const [nuevoDescripcion, setNuevoDescripcion] = useState("");
 
     useEffect(() => {
         const obtenerLibro = async () => {
@@ -33,6 +34,7 @@ const EditarLibro = () => {
                 Título: nuevoTitulo,
                 Autor: nuevoAutor,
                 Género: nuevoGenero,
+                Descripción: nuevoDescripcion,
             });
             alert("Libro actualizado correctamente");
             navigate("/listar-libros");
@@ -61,6 +63,7 @@ const EditarLibro = () => {
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>
             </select>
+            <textarea placeholder="Descripción..." value={nuevoDescripcion} onChange={(e) => setNuevoDescripcion(e.target.value)}></textarea>
             <button onClick={GuardarCambios}>Actualizar libro</button>
         </div>
     )
