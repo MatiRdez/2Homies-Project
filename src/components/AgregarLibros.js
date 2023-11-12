@@ -11,8 +11,22 @@ const AgregarLibros = () => {
     const [genero, setGenero] = useState("");
     const [descripcion, setDescripcion] = useState("");
     const [fecha, setFecha] = useState("");
-    const [portada, setPortada] = useState("");
+    const [portada, setPortada] = useState(null);
     const [url, setURL] = useState("");
+
+    const SubirImagen = async () => {
+        try{
+            const nombre = new Date().getTime() + portada.name;
+            const storageRef = ref(storage, `portadas/${nombre}`);
+            const uploadTask = uploadBytesResumable(storageRef, portada);
+            const snapshot = await uploadTask;
+            const portadaURL = await getDownloadURL(snapshot.ref);
+            return portadaURL;
+        }catch(error){
+            console.error("Error al subir la imagen:", error);
+            throw error;
+        }
+    };
 
     const BotonCrearLibro = async () =>{
         try{
