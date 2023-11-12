@@ -30,13 +30,14 @@ const AgregarLibros = () => {
 
     const BotonCrearLibro = async () =>{
         try{
+            const portadaURL = await SubirImagen();
             const docRef = await addDoc(collection(db, "Libros"), {
                 Título: titulo,
                 Autor: autor,
                 Género: genero,
                 Descripción: descripcion,
                 Fecha: fecha,
-                Portada: portada,
+                PortadaURL: portadaURL,
                 URL: url,
             });
             console.log("Documento agregado correctamente con ID: ", docRef.id);
@@ -45,7 +46,7 @@ const AgregarLibros = () => {
             setGenero("");
             setDescripcion("");
             setFecha("");
-            setPortada("");
+            setPortada(null);
             setURL("");
         }
         catch(error){
