@@ -48,13 +48,14 @@ const EditarLibro = () => {
 
     const GuardarCambios = async () => {
         try{
+            const nuevoPortadaURL = await SubirImagen();
             await updateDoc(doc(db, "Libros", libroId), {
                 Título: nuevoTitulo,
                 Autor: nuevoAutor,
                 Género: nuevoGenero,
                 Descripción: nuevoDescripcion,
                 Fecha: nuevoFecha,
-                Portada: nuevoPortada,
+                PortadaURL: nuevoPortadaURL,
                 URL: nuevoURL,
             });
             alert("Libro actualizado correctamente");
