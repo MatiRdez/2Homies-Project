@@ -11,6 +11,7 @@ import ListarLibros from './components/ListarLibros.js';
 import EditarLibro from "./components/EditarLibro.js"; 
 import Categorias from './components/Categorias.js';
 import Accion from './routes/Categorías/Accion.js';
+import Aventura from './routes/Categorías/Aventura.js';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/editar-libro/:libroId' element={<EditarLibro/>}></Route>
           <Route path='/Navegar' element={<Categorias/>}></Route>
           <Route path='/accion' element={<Accion/>}></Route>
+          <Route path='/aventura' element={<Aventura/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
