@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDoc, updateDoc, doc } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import { db, storage } from "../firebaseConfig";
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useParams, useNavigate } from "react-router-dom";
 
 const EditarLibro = () => {
