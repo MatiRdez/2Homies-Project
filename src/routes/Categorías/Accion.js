@@ -32,7 +32,18 @@ const Accion = () => {
 
     return(
         <div>
-
+            <h1>Libros del género acción</h1>
+            {libros.map((libro) => (
+                <div key={libro.id}>
+                    <h1>{libro.Título} | {libro.Autor} - ({libro.Fecha})</h1>
+                    <div>
+                        <img src={libro.PortadaURL} alt={`Portada de ${libro.Título}`}/>
+                        <p>{libro.Descripción}</p>
+                    </div>
+                    <button><Link to={libro.URL}>Leer libro</Link></button>
+                    <button>Agregar a favoritos</button>
+                </div>
+            ))}
         </div>
     )
 }
