@@ -10,6 +10,7 @@ import AgregarLibros from './components/AgregarLibros.js';
 import ListarLibros from './components/ListarLibros.js';
 import EditarLibro from "./components/EditarLibro.js"; 
 import Categorias from './components/Categorias.js';
+import Accion from './routes/Categorías/Accion.js';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/listar-libros' element={<ListarLibros/>}></Route>
           <Route path='/editar-libro/:libroId' element={<EditarLibro/>}></Route>
           <Route path='/Navegar' element={<Categorias/>}></Route>
+          <Route path='/accion' element={<Accion/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

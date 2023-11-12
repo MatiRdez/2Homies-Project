@@ -47,3 +47,5 @@ const Accion = () => {
         </div>
     )
 }
+
+export default Accion;
