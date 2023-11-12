@@ -16,7 +16,7 @@ const EditarLibro = () => {
     const [nuevoGenero, setNuevoGenero] = useState("");
     const [nuevoDescripcion, setNuevoDescripcion] = useState("");
     const [nuevoFecha, setNuevoFecha] = useState("");
-    const [nuevoPortada, setNuevoPortada] = useState("");
+    const [nuevoPortada, setNuevoPortada] = useState(null);
     const [nuevoURL, setNuevoURL] = useState("");
 
     useEffect(() => {
@@ -31,6 +31,20 @@ const EditarLibro = () => {
         };
         obtenerLibro();
     }, [libroId]);
+
+    const SubirImagen = async () => {
+        try{
+            const nombre = new Date().getTime() + nuevoPortada.name;
+            const storageRef = ref(storage, `portadas/${nombre}`);
+            const uploadTask = uploadBytesResumable(storageRef, nuevoPortada);
+            const snapshot = await uploadTask;
+            const nuevoPortadaURL = await getDownloadURL(snapshot.ref);
+            return nuevoPortadaURL;
+        }catch(error){
+            console.error("Error al subir la imagen:", error);
+            throw error;
+        }
+    };
 
     const GuardarCambios = async () => {
         try{
