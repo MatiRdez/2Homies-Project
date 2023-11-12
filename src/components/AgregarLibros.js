@@ -85,8 +85,7 @@ const AgregarLibros = () => {
             <input
                 id="imagen"
                 type="file"
-                value={portada}
-                onChange={(e) => setPortada(e.target.value)}
+                onChange={(e) => setPortada(e.target.files[0])}
             />
             <input
                 type="url"
