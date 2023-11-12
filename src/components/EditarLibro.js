@@ -96,8 +96,7 @@ const EditarLibro = () => {
             <input
                 id="imagen"
                 type="file"
-                value={nuevoPortada}
-                onChange={(e) => setNuevoPortada(e.target.value)}
+                onChange={(e) => setNuevoPortada(e.target.files[0])}
             />
             <input
                 type="url"
