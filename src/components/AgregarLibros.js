@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import { db, storage } from "../firebaseConfig";
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { Link } from "react-router-dom";
 
 const AgregarLibros = () => {
