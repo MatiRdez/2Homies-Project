@@ -1,15 +1,17 @@
 .boton{
-    width: max-content;
+    width: auto;
 }
 
 .boton input{
     margin-top: 5px;
     width: 120px;
-    height: 30px;
+    height: 35px;
     background-color: rgb(50, 50, 50);
     color: white;
+    border-radius: 5px;
 }
 
-.boton:hover{
-    opacity: 85%;
+.boton input:hover{
+    opacity: 0.85;
+    cursor: pointer;
 }

@@ -35,7 +35,7 @@ const Registro = () => {
 
     return(
         <div className="form-registro">
-            <NavLink to='/login'><BotonLogin texto='Iniciar sesión'/></NavLink>
+            <NavLink to='/'><BotonLogin texto='Iniciar sesión'/></NavLink>
             <form onSubmit={Datos}>
                 <label for="correo">Correo electrónico</label>
                 <input id="correo" type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
