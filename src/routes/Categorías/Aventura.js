@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import { Link } from "react-router-dom";
+import "../../components/styles/ListarLibros.css";
 
 const Aventura = () => {
 
@@ -32,18 +33,24 @@ const Aventura = () => {
 
     return(
         <div>
-            <h1>Libros del género aventura</h1>
-            {libros.map((libro) => (
-                <div key={libro.id}>
-                    <h1>{libro.Título} | {libro.Autor} - ({libro.Fecha})</h1>
-                    <div>
-                        <img src={libro.PortadaURL} alt={`Portada de ${libro.Título}`}/>
-                        <p>{libro.Descripción}</p>
-                    </div>
-                    <button><Link to={libro.URL}>Leer libro</Link></button>
-                    <button>Agregar a favoritos</button>
+            <div className="libro-contenedor">
+                <h1 className="titulo">Libros del género Aventura</h1>
+                <div className="libros">
+                    {libros.map((libro) => (
+                        <div key={libro.id} className="libro-carta">
+                            <h2 className="libro-titulo">{libro.Título} | {libro.Autor} - ({libro.Fecha})</h2>
+                            <div className="libro-detalles">
+                                <img src={libro.PortadaURL} alt={`Portada de ${libro.Título}`} className="portada"/>
+                                <p className="libro-desc">{libro.Descripción}</p>
+                            </div>
+                            <div className="libro-botones">
+                                <button className="boton-leer"><Link to={libro.URL} className="boton-leer">Leer libro</Link></button>
+                                <button className="boton-fav">Agregar a favoritos</button>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            ))}
+            </div>
         </div>
     )
 }
