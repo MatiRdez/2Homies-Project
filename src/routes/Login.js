@@ -34,6 +34,9 @@ const Login = () => {
                         if(error.code === 'auth/wrong-password'){
                             alert("La contraseña es incorrecta");
                         }
+                        else{
+                            alert("Por favor, complete los campos correctamente");
+                        }
                     }
                 }
             })
