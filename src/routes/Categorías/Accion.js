@@ -34,7 +34,7 @@ const Accion = () => {
     return(
         <div>
             <div className="libro-contenedor">
-                <h1 className="titulo">Libros del género Aventura</h1>
+                <h1 className="titulo">Libros del género Acción</h1>
                 <div className="libros">
                     {libros.map((libro) => (
                         <div key={libro.id} className="libro-carta">
@@ -44,7 +44,7 @@ const Accion = () => {
                                 <p className="libro-desc">{libro.Descripción}</p>
                             </div>
                             <div className="libro-botones">
-                                <button className="boton-leer"><Link to={libro.URL} className="boton-leer">Leer libro</Link></button>
+                                <button className="boton-leer"><Link to={libro.URL} className="boton-link">Leer libro</Link></button>
                                 <button className="boton-fav">Agregar a favoritos</button>
                             </div>
                         </div>
