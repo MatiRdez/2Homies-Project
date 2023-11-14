@@ -3,6 +3,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db, storage } from "../firebaseConfig";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { Link } from "react-router-dom";
+import "../components/styles/BotonCRUD.css";
 
 const AgregarLibros = () => {
 
@@ -55,7 +56,7 @@ const AgregarLibros = () => {
     }
 
     return(
-        <div>
+        <div className="form-agregar">
             <input
                 type="text"
                 placeholder="Título"
@@ -94,7 +95,7 @@ const AgregarLibros = () => {
                 onChange={(e) => setURL(e.target.value)}
             />
             <button onClick={BotonCrearLibro}>Agregar libro</button>
-            <button><Link to={"/listar-libros"}>Ver lista de libros</Link></button>
+            <button className="boton-lista"><Link to={"/listar-libros"}>Ver lista de libros</Link></button>
         </div>
     )
 }

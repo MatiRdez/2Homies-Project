@@ -1,0 +1,52 @@
+.form-agregar{
+    max-width: 600px;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"],
+input[type="url"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 150px;
+}
+
+button{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.boton-lista{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    width: 180px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.boton-lista a{
+    color: white;
+    text-decoration: none;
+}
