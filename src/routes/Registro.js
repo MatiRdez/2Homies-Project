@@ -4,6 +4,7 @@ import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
 import { NavLink } from "react-router-dom";
 import BotonLogin from '../components/BotonLogin';
+import Swal from 'sweetalert2'
 const Registro = () => {
 
     const [email, setEmail] = useState('');
@@ -14,12 +15,26 @@ const Registro = () => {
     const Datos = (e) => {
 
         if(password.length < 8){
-            alert("La contraseña debe tener al menos 8 caracteres.");
+           
+            Swal.fire({
+                icon: "error",
+                title: "Parece que ha sucedido un error",
+                text: "La contraseña debe tener al menos 8 caracteres.",
+                footer: '<a href="#">Why do I have this issue?</a>'
+              });
+            
             return;
         }
 
         if(password !== confirmPassword){
-            alert("Las contraseñas no coinciden.");
+            
+            Swal.fire({
+                icon: "error",
+                title: "Parece que ha sucedido un error",
+                text: "Las contraseñas no coinciden.",
+                footer: '<a href="#">Why do I have this issue?</a>'
+              });
+            
             return;
         }
 
@@ -27,7 +42,12 @@ const Registro = () => {
         createUserWithEmailAndPassword(auth, email, usuario, password)
             .then((userCredential) => {
                 console.log(userCredential);
-                alert("Registrado correctamente");
+                
+                Swal.fire({
+                    title: "Listo!",
+                    text: "Registrado correctamente",
+                    icon: "success"
+                  });
             })
             .catch((error) => {
                 console.log(error);
