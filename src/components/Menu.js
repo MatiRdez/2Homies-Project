@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Home.css"
+import "./styles/Menu.css"
 import ImgLogo from "../components/images/LogoApp.png";
 import SearchBooks from "./Buscar";
 import Salir from "./Salir";

@@ -1,0 +1,91 @@
+/* Estilos generales del encabezado */
+.header {
+  background-color: #2c3e50; /* Azul oscuro para un ambiente más bibliotecario */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del logo */
+.logo {
+  width: 150px; /* Reducido el ancho del logo */
+  margin-right: 10px;
+}
+
+/* Estilos del título */
+.titulo {
+  color: #ecf0f1; /* Blanco suave para un aspecto minimalista */
+  font-size: 1.5em; /* Tamaño de fuente aumentado */
+}
+
+/* Estilos del contenedor de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos del campo de búsqueda */
+.search-input {
+  padding: 8px; /* Aumentado el padding para mayor comodidad */
+  margin-right: 10px;
+  border: 1px solid #bdc3c7; /* Color del borde más suave */
+  border-radius: 5px;
+}
+
+/* Estilos del botón de búsqueda */
+.search-button {
+  background-color: #3498db; /* Azul claro para resaltar */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #2980b9; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos de la barra de navegación lateral */
+.navbar {
+  width: 250px;
+  height: 100vh;
+  background-color: #34495e; /* Azul oscuro para coordinar con el encabezado */
+  padding: 25px;
+  border: 2px solid #2c3e50; /* Alineado con el color del encabezado */
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s; /* Animación para cambios de ancho */
+}
+
+/* Estilos de la lista de navegación */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos de los elementos de la lista de navegación */
+.navbar li {
+  background-color: #2c3e50; /* Color de fondo del elemento */
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  border: 2px solid #34495e; /* Color del borde coordinado */
+  border-radius: 5px;
+}
+
+.navbar li:hover {
+  background-color: #34495e; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos de los enlaces de la lista de navegación */
+.navbar a {
+  text-decoration: none;
+  color: white;
+}

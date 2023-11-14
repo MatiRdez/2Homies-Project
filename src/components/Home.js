@@ -5,10 +5,14 @@ import ScrollToSearchButton from "./Buscar";
 import SearchBooks from "./Buscar";
 import { NavLink } from "react-router-dom";
 import Menu from "./Menu";
+import BookSuggestion from "./BookSuggestion";
 const Home = (props) => {
     return(
       <div>
+        
+
         <Menu/>
+        
       </div>
     )
 }

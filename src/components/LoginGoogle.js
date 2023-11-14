@@ -3,7 +3,7 @@ import Google from './images/Google.png';
 import './styles/BotonGoogle.css';
 import { auth } from "../firebaseConfig";
 import { GoogleAuthProvider, signInWithPopup } from "@firebase/auth";
-
+import Swal from 'sweetalert2'
 const BotonGoogle = () => {
 
     const Provider = new GoogleAuthProvider();
@@ -11,7 +11,13 @@ const BotonGoogle = () => {
     const IniciarConGoogle = () => {
         signInWithPopup(auth, Provider)
             .then((result) => {
-                alert("Logeado correctamente");
+               
+                Swal.fire({
+                    title: "Listo!",
+                    text: "Logeado correctamente",
+                    icon: "success"
+                  });
+                  
             })
             .catch((error) => {
                 console.log(error);

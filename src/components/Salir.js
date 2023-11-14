@@ -3,7 +3,7 @@ import { auth } from "../firebaseConfig";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import "./styles/BotonSalir.css";
-
+import Swal from 'sweetalert2'
 const Salir = () => {
 
     const navigate = useNavigate();
@@ -11,7 +11,12 @@ const Salir = () => {
     const CerrarSesion = () => {
         signOut(auth)
             .then(() => {
-                alert("Sesión cerrada correctamente")
+                
+                Swal.fire({
+                    title: "Listo!",
+                    text: "Sesión cerrada correctamente",
+                    icon: "success"
+                  });
                 navigate("/")
             })
             .catch((error) => {
