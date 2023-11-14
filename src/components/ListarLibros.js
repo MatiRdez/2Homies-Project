@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import { Link } from "react-router-dom"
-import EditarLibro from "./EditarLibro";
 import EliminarLibro from "./EliminarLibro";
+import "../components/styles/ListaLibros.css";
 
 const ListarLibros = () => {
 
@@ -22,18 +22,18 @@ const ListarLibros = () => {
     }, []);
 
     return(
-        <div>
+        <div className="lista-libros">
             <h1>Lista de libros</h1>
             <ul>
                 {libros.map((libro) => (
                     <li key={libro.id}>
-                        <strong>Título:</strong> {libro.Título}, <strong>Autor:</strong> {libro.Autor}, <strong>Género:</strong> {libro.Género}
-                        <button><Link to={`/editar-libro/${libro.id}`}>Modificar</Link></button>
+                        <div className="detalle-libro"><strong>Título:</strong> {libro.Título} <strong>Autor:</strong> {libro.Autor} <strong>Género:</strong> {libro.Género}</div>
+                        <button className="modificar"><Link to={`/editar-libro/${libro.id}`}>Modificar</Link></button>
                         <EliminarLibro libroId={libro.id}/>
                     </li>
                 ))}
             </ul>
-            <button><Link to={"/agregar-libros"}>Agregar libros (+)</Link></button>
+            <button className="agregar"><Link to={"/agregar-libros"}>Agregar libros (+)</Link></button>
         </div>
     )
 }

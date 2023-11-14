@@ -19,7 +19,7 @@ const EliminarLibro = ({ libroId }) => {
 
     return(
         <div>
-            <button onClick={BotonEliminar}>Eliminar</button>
+            <button className="borrar" onClick={BotonEliminar}>Eliminar</button>
         </div>
     )
 }
