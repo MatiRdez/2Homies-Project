@@ -44,7 +44,12 @@ const Registro = () => {
                 else{
                     if(error.code === 'auth/email-already-in-use'){
                         
-                        
+                        Swal.fire({
+                            icon: "error",
+                            title: "Parece que ha sucedido un error",
+                            text: "El correo electrónico que ingresó ya está en uso, intente con otro",
+                            footer: '<a href="#">Why do I have this issue?</a>'
+                          });
                         
                     }
                     else{
