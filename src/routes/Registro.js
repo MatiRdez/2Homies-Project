@@ -34,17 +34,22 @@ const Registro = () => {
     }
 
     return(
-        <div className="form-registro">
-            <NavLink to='/'><BotonLogin texto='Iniciar sesión'/></NavLink>
-            <form onSubmit={Datos}>
-                <label for="correo">Correo electrónico</label>
-                <input id="correo" type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
-                <label for="usuario">Nombre de usuario</label>
-                <input id="usuario" type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}></input>
-                <label for="pass">Contraseña</label>
-                <input id="pass" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
-                <input id="enviar" type="submit" value="Registrarse"></input>
-            </form>
+        <div>
+            <div className="fondo"></div>
+            <div className="form-registro">
+                <form onSubmit={Datos}>
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" type="text" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                    <label for="usuario">Nombre de usuario</label>
+                    <input id="usuario" type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}></input>
+                    <label for="pass">Contraseña</label>
+                    <input id="pass" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+                    <input id="enviar" type="submit" value="Registrarse"></input>
+                </form>
+                <hr></hr>
+                <div className="registrarse">O</div>
+                <NavLink to='/'><BotonLogin texto='Iniciar sesión'/></NavLink>
+            </div>
         </div>
     )
 }
