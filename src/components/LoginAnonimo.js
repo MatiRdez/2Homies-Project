@@ -4,12 +4,18 @@ import "./styles/BotonAnonimo.css";
 import { auth } from "../firebaseConfig";
 import { signInAnonymously } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
 const BotonAnonimo = () => {
     const navigate = useNavigate();
     const IniciarAnonimo = () => {
         signInAnonymously(auth)
             .then((result) => {
-                alert("Ingresó correctamente");
+                
+                Swal.fire({
+  title: "Bien hecho!",
+  text: "Ingresó correctamente",
+  icon: "success"
+});
                 navigate("/home");
             })
             .catch((error) => {
