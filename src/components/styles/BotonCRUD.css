@@ -7,6 +7,15 @@
     padding: 10px;
 }
 
+.form-editar{
+    max-width: 600px;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+}
+
 input[type="text"],
 textarea,
 select,

@@ -3,6 +3,7 @@ import { collection, getDoc, updateDoc, doc } from "firebase/firestore";
 import { db, storage } from "../firebaseConfig";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useParams, useNavigate } from "react-router-dom";
+import "../components/styles/BotonCRUD.css";
 
 const EditarLibro = () => {
 
@@ -66,7 +67,7 @@ const EditarLibro = () => {
     };
 
     return(
-        <div>
+        <div className="form-editar">
             <input
                 type="text"
                 placeholder="Actualizar título"
