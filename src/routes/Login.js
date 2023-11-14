@@ -55,7 +55,12 @@ const Login = () => {
                         }
                         else{
                            
-                           
+                            Swal.fire({
+                                icon: "error",
+                                title: "Parece que ha sucedido un error",
+                                text: "Por favor, complete los campos correctamente",
+                                footer: '<a href="#">Why do I have this issue?</a>'
+                              });
                         }
                     }
                 }
