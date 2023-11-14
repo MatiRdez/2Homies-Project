@@ -7,7 +7,7 @@ import BotonGitHub from "../components/LoginGitHub";
 import BotonAnonimo from "../components/LoginAnonimo";
 import { useNavigate, NavLink } from "react-router-dom";
 import BotonLogin from "../components/BotonLogin";
-
+import Swal from 'sweetalert2'
 const Login = () => {
 
     const [email, setEmail] = useState('');
@@ -24,19 +24,25 @@ const Login = () => {
             .catch((error) => {
                 console.log(error.code);
                 if(error.code === 'auth/invalid-email'){
-                    alert("Ingrese un correo electrónico válido");
+                    
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Ingrese un correo electrónico válido",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
                 }
                 else{
                     if(error.code === 'auth/user-not-found'){
-                        alert("El usuario no está registrado")
+                        
+                        
                     }
                     else{
-                        if(error.code === 'auth/wrong-password'){
-                            alert("La contraseña es incorrecta");
+                        
                         }
                         else{
-                            alert("Por favor, complete los campos correctamente");
-                        }
+                           
+                           
                     }
                 }
             })
