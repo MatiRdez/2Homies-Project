@@ -3,15 +3,24 @@ import GitHub from './images/GitHub.png';
 import './styles/BotonGitHub.css';
 import { auth } from "../firebaseConfig";
 import { GithubAuthProvider, signInWithPopup } from "@firebase/auth";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const BotonGitHub = () => {
 
     const Provider = new GithubAuthProvider();
 
+    const navigate = useNavigate();
+
     const IniciarConGitHub = () => {
         signInWithPopup(auth, Provider)
             .then((result) => {
-                alert("Logeado correctamente");
+                Swal.fire({
+                    title: "Listo!",
+                    text: "Logeado correctamente",
+                    icon: "success"
+                });
+                navigate("/home")
             })
             .catch((error) => {
                 console.log(error);
