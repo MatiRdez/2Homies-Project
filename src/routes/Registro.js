@@ -9,8 +9,20 @@ const Registro = () => {
     const [email, setEmail] = useState('');
     const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
 
     const Datos = (e) => {
+
+        if(password.length < 8){
+            alert("La contraseña debe tener al menos 8 caracteres.");
+            return;
+        }
+
+        if(password !== confirmPassword){
+            alert("Las contraseñas no coinciden.");
+            return;
+        }
+
         e.preventDefault();
         createUserWithEmailAndPassword(auth, email, usuario, password)
             .then((userCredential) => {
@@ -44,6 +56,8 @@ const Registro = () => {
                     <input id="usuario" type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}></input>
                     <label for="pass">Contraseña</label>
                     <input id="pass" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+                    <label for="confirmPass">Confirmar Contraseña</label>
+                    <input id="confirmPass" type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}></input>
                     <input id="enviar" type="submit" value="Registrarse"></input>
                 </form>
                 <hr></hr>
