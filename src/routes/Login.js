@@ -34,7 +34,13 @@ const Login = () => {
                 }
                 else{
                     if(error.code === 'auth/user-not-found'){
-                        
+                       
+                        Swal.fire({
+                            icon: "error",
+                            title: "Parece que ha sucedido un error",
+                            text: "El usuario no está registrado",
+                            footer: '<a href="#">Why do I have this issue?</a>'
+                          });
                         
                     }
                     else{
