@@ -1,65 +1,46 @@
-/* Home.css */
-
+/* Estilos Generales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  
-  .header {
-    background-color: #4a4a4a;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 220px;
-    margin-right: 10px;
-  }
-  
-  .titulo {
-    color: #ffd700;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    padding: 8px;
-    margin-right: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-  }
-  
-  .search-button {
-    background-color: #555;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .search-button:hover {
-    background-color: #777;
-  }
-  
-  .main-content {
-    padding: 20px;
-  }
-  
-  .sugerencias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Estilos del componente BookSuggestion */
-  /* Añade más estilos según tus necesidades */
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: 400px;
+  padding: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Cambiado a left para alinear el texto a la izquierda */
+  margin-top: -650px;
+}
+
+/* Encabezado */
+h1 {
+  color: #3498db;
+  font-size: 1.5em;
+}
+
+/* Texto Principal */
+p {
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2980b9;
+}
