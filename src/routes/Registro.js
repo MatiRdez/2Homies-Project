@@ -32,14 +32,25 @@ const Registro = () => {
             .catch((error) => {
                 console.log(error);
                 if(error.code === 'auth/invalid-email'){
-                    alert("Ingrese un correo electrónico válido");
+                  
+                    Swal.fire({
+                            icon: "error",
+                            title: "Parece que ha sucedido un error",
+                            text: "Ingrese un correo electrónico válido",
+                            footer: '<a href="#">Why do I have this issue?</a>'
+                          });
+                        
                 }
                 else{
                     if(error.code === 'auth/email-already-in-use'){
-                        alert("El correo electrónico que ingresó ya está en uso, intente con otro");
+                        
+                        
+                        
                     }
                     else{
-                        alert("Por favor, complete los campos correctamente");
+                        
+                        
+                        
                     }
                 }
             })

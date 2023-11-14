@@ -19,7 +19,13 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 console.log(userCredential);
-                alert("Logeado correctamente");
+                
+                Swal.fire({
+                    title: "Listo!",
+                    text: "Logeado correctamente",
+                    icon: "success"
+                  });
+                  
             })
             .catch((error) => {
                 console.log(error.code);
@@ -27,14 +33,14 @@ const Login = () => {
                     
                     Swal.fire({
                         icon: "error",
-                        title: "Oops...",
+                        title: "Parece que ha sucedido un error",
                         text: "Ingrese un correo electrónico válido",
                         footer: '<a href="#">Why do I have this issue?</a>'
                       });
                 }
                 else{
                     if(error.code === 'auth/user-not-found'){
-                        alert("El usuario no está registrado")
+                        
                         Swal.fire({
                             icon: "error",
                             title: "Parece que ha sucedido un error",
