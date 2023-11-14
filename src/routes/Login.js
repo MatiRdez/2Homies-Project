@@ -34,7 +34,7 @@ const Login = () => {
                 }
                 else{
                     if(error.code === 'auth/user-not-found'){
-                       
+                        alert("El usuario no está registrado")
                         Swal.fire({
                             icon: "error",
                             title: "Parece que ha sucedido un error",
@@ -44,11 +44,19 @@ const Login = () => {
                         
                     }
                     else{
-                        
+                        if(error.code === 'auth/wrong-password'){
+                           
+                            Swal.fire({
+                        icon: "error",
+                        title: "Parece que ha sucedido un error",
+                        text: "La contraseña es incorrecta",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
                         }
                         else{
                            
                            
+                        }
                     }
                 }
             })
