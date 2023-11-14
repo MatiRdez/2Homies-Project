@@ -1,11 +1,23 @@
-.boton-google button{
-    background-color: white;
-    height: 30px;
-    width: 250px;
+.boton-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.boton-google img{
+.boton-google button{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 30px;
+    width: 250px;
+    line-height: 30px;
+}
+
+.boton-google button:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.boton-google img {
     height: 15px;
     width: 15px;
-    float: left;
+    margin-right: 10px;
 }

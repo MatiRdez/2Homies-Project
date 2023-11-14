@@ -1,11 +1,23 @@
-.boton-anonimo button{
-    background-color: white;
-    height: 30px;
-    width: 250px;
+.boton-anonimo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.boton-anonimo img{
+.boton-anonimo button {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 30px;
+    width: 250px;
+    line-height: 30px;
+}
+
+.boton-anonimo button:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.boton-anonimo img {
     height: 15px;
     width: 15px;
-    float: left;
+    margin-right: 10px;
 }
