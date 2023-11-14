@@ -14,30 +14,6 @@ const Registro = () => {
 
     const Datos = (e) => {
 
-        if(password.length < 8){
-           
-            Swal.fire({
-                icon: "error",
-                title: "Parece que ha sucedido un error",
-                text: "La contraseña debe tener al menos 8 caracteres.",
-                footer: '<a href="#">Why do I have this issue?</a>'
-              });
-            
-            return;
-        }
-
-        if(password !== confirmPassword){
-            
-            Swal.fire({
-                icon: "error",
-                title: "Parece que ha sucedido un error",
-                text: "Las contraseñas no coinciden.",
-                footer: '<a href="#">Why do I have this issue?</a>'
-              });
-            
-            return;
-        }
-
         e.preventDefault();
         createUserWithEmailAndPassword(auth, email, usuario, password)
             .then((userCredential) => {
@@ -82,6 +58,29 @@ const Registro = () => {
                           });
                         
                     }
+                }
+                if(password.length < 8){
+           
+                    Swal.fire({
+                        icon: "error",
+                        title: "Parece que ha sucedido un error",
+                        text: "La contraseña debe tener al menos 8 caracteres.",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
+                    
+                    return;
+                }
+        
+                if(password !== confirmPassword){
+                    
+                    Swal.fire({
+                        icon: "error",
+                        title: "Parece que ha sucedido un error",
+                        text: "Las contraseñas no coinciden.",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
+                    
+                    return;
                 }
             })
     }
