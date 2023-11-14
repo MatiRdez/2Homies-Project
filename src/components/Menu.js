@@ -12,9 +12,10 @@ const Menu = () => {
       <input class="check" type="checkbox" id="toggle" />
       <div className="navbar">
         <ul>
-        <NavLink to='/Home'><li>Inicio</li></NavLink>
-        <NavLink to='/Navegar'><li>Navegar</li></NavLink>
-        <li><a href="#">Libros</a></li>
+          <NavLink to='/Home'><li>Inicio</li></NavLink>
+          <NavLink to='/Navegar'><li>Navegar</li></NavLink>
+          <li><a href="#">Libros</a></li>
+          <NavLink to="/listar-libros"><li>CRUD - Libros</li></NavLink>
           <SearchBooks className="busc"></SearchBooks>
           <li><Salir/></li>
         </ul>
