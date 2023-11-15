@@ -1,42 +1,81 @@
-.container {
+.container-cats{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #f4f4f4;
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center;
-  width: 100%; /* Ancho al 100% del contenedor padre */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-decoration: none;
 }
 
-.genre-box {
-  width: 120px; /* Aumentar el ancho */
-  height: 120px; /* Aumentar la altura */
-  background-color: #3498db;
-  color: #fff;
+.container{
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  line-height: 120px; /* Ajustar el line-height para centrar verticalmente el texto */
+}
+
+.container a{
+  text-decoration: none;
+  color: black;
+}
+
+.container a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.categoria{
+  width: 28%;
+  margin: 1%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s;
 }
 
-.genre-box:hover {
-  transform: scale(1.1);
-  background-color: #e74c3c;
+.categoria:hover{
+  transform: scale(1.05);
 }
 
-.mystery {
-  background-color: #3498db;
+.categoria p{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
-.romance {
-  background-color: #e74c3c;
+.categoria:hover p{
+  max-height: 100%;
 }
 
-.fantasy {
-  background-color: #2ecc71;
+.aventura{
+  border: 3px solid rgba(0, 176, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 176, 0, 0.2);
 }
 
-.scifi {
-  background-color: #f1c40f;
+.acción{
+  border: 3px solid rgba(0, 55, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 55, 255, 0.2);
 }
 
-.thriller {
-  background-color: #9b59b6;
+.terror{
+  border: 3px solid rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.fantasía{
+  border: 3px solid (0, 221, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 221, 255, 0.2);
+}
+
+.historia{
+  border: 3px solid rgba(255, 165, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+}
+
+.romance{
+  border: 3px solid rgba(169, 77, 92, 0.2);
+  box-shadow: 0 0 15px rgba(169, 77, 92, 0.2);
 }
