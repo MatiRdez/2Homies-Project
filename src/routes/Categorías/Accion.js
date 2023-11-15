@@ -34,7 +34,7 @@ const Accion = () => {
     return(
         <div>
             <div className="libro-contenedor">
-                <h1 className="titulo">Libros del género Acción</h1>
+                <h1 className="titulo-cat">Libros del género Acción</h1>
                 <div className="libros">
                     {libros.map((libro) => (
                         <div key={libro.id} className="libro-carta">

@@ -34,7 +34,7 @@ const Terror = () => {
     return(
         <div>
             <div className="libro-contenedor">
-                <h1 className="titulo">Libros del género Terror</h1>
+                <h1 className="titulo-cat">Libros del género Terror</h1>
                 <div className="libros">
                     {libros.map((libro) => (
                         <div key={libro.id} className="libro-carta">

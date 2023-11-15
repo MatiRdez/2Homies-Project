@@ -11,8 +11,9 @@ body{
     padding: 20px;
 }
 
-.titulo{
+.titulo-cat{
     text-align: center;
+    color: black;
 }
 
 .libros{
