@@ -33,10 +33,10 @@ const Categorias = () => {
                         <h2>Historia</h2>
                         <p>Sumérgete en el pasado y vive eventos históricos a través de relatos que te transportarán a diferentes épocas y culturas.</p>
                     </Link></div>
-                    <div class="categoria romance">
+                    <div class="categoria romance"><Link to="/romance">
                         <h2>Romance</h2>
                         <p>Embárcate en historias de amor apasionadas y conmovedoras, donde los personajes enfrentan desafíos para encontrar el verdadero significado del amor.</p>
-                    </div>
+                    </Link></div>
                 </div>
             </div>
         </div>

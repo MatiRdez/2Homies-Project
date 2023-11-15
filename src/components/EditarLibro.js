@@ -87,6 +87,7 @@ const EditarLibro = () => {
                 <option value="Terror">Terror</option>
                 <option value="Fantasía">Fantasía</option>
                 <option value="Historia">Historia</option>
+                <option value="Romance">Romance</option>
             </select>
             <textarea placeholder="Descripción..." value={nuevoDescripcion} onChange={(e) => setNuevoDescripcion(e.target.value)}></textarea>
             <input

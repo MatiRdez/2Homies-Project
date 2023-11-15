@@ -15,6 +15,7 @@ import Aventura from './routes/Categorías/Aventura.js';
 import Terror from './routes/Categorías/Terror.js';
 import Fantasia from './routes/Categorías/Fantasia.js';
 import Historia from './routes/Categorías/Historia.js';
+import Romance from './routes/Categorías/Romance.js';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/terror' element={<Terror/>}></Route>
           <Route path='/fantasia' element={<Fantasia/>}></Route>
           <Route path='/historia' element={<Historia/>}></Route>
+          <Route path='/romance' element={<Romance/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
