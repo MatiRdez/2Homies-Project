@@ -13,6 +13,7 @@ import Categorias from './components/Categorias.js';
 import Accion from './routes/Categorías/Accion.js';
 import Aventura from './routes/Categorías/Aventura.js';
 import Terror from './routes/Categorías/Terror.js';
+import Fantasia from './routes/Categorías/Fantasia.js';
 
 function App() {
   return (
@@ -25,10 +26,11 @@ function App() {
           <Route path='/agregar-libros' element={<AgregarLibros/>}></Route>
           <Route path='/listar-libros' element={<ListarLibros/>}></Route>
           <Route path='/editar-libro/:libroId' element={<EditarLibro/>}></Route>
-          <Route path='/Navegar' element={<Categorias/>}></Route>
+          <Route path='/navegar' element={<Categorias/>}></Route>
           <Route path='/accion' element={<Accion/>}></Route>
           <Route path='/aventura' element={<Aventura/>}></Route>
           <Route path='/terror' element={<Terror/>}></Route>
+          <Route path='/fantasia' element={<Fantasia/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

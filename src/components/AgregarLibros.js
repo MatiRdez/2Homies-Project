@@ -74,6 +74,7 @@ const AgregarLibros = () => {
                 <option value="Acción">Acción</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Terror">Terror</option>
+                <option value="Fantasía">Fantasía</option>
             </select>
             <textarea placeholder="Descripción..." value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></textarea>
             <input
