@@ -1,25 +1,20 @@
 import React from "react";
-import Salir from "./Salir";
 import "./styles/Home.css";
-import ScrollToSearchButton from "./Buscar";
-import SearchBooks from "./Buscar";
 import { NavLink } from "react-router-dom";
 import Menu from "./Menu";
 
-const Home = (props) => {
+const Home = () => {
     return(
       <div>
-        
-
         <Menu/>
-        <div class="container">
-    
-
-    <div class="section">
-      <p>Bienvenido a BooksHub, donde la pasión por la lectura se encuentra con la diversidad literaria.</p>
-    </div>
-
-  </div>
+        <div className="container">
+          <div className="section">
+            <p className="texto">¡Bienvenido a BooksHub, tu refugio literario definitivo! Sumérgete en un universo de palabras cautivadoras y emociones desatadas. Nuestras estanterías virtuales albergan una rica variedad de géneros, desde épicas fantásticas hasta poesía conmovedora y thrillers que acelerarán tu pulso. Sea cual sea tu pasión literaria, aquí encontrarás tu próxima obsesión. Únete a nuestra comunidad de lectores apasionados, comparte reseñas, descubre recomendaciones personalizadas y participa en desafíos de lectura que desatarán tu imaginación. En BooksHub, celebramos la diversidad de historias y voces. ¿Listo para sumergirte en un mundo de letras inexplorado? ¡Bienvenido a tu nuevo hogar literario, bienvenido a BooksHub!</p>
+          </div>
+          <div>
+            <button className="boton-navegar"><NavLink to="/navegar">Comenzar a navegar!</NavLink></button>
+          </div>
+        </div>
       </div>
     )
 }

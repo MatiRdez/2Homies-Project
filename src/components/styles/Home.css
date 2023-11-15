@@ -18,15 +18,16 @@ body {
 }
 
 /* Encabezado */
-h1 {
+.container h1 {
   color: #3498db;
   font-size: 1.5em;
 }
 
 /* Texto Principal */
-p {
+.container p {
   line-height: 1.5;
   font-size: 0.9em;
+  font-weight: bold;
 }
 
 /* Secciones */
@@ -35,12 +36,32 @@ p {
 }
 
 /* Enlaces */
-a {
+.container a {
   color: #3498db;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-a:hover {
+.container a:hover {
   color: #2980b9;
+}
+
+.boton-navegar{
+  width: 500px;
+  background-color: rgb(196, 131, 12);
+  font-weight: bold;
+}
+
+.boton-navegar:hover{
+  background-color: rgb(148, 99, 10);
+}
+
+.boton-navegar a{
+  color: white;
+  text-decoration: none;
+}
+
+.boton-navegar a:hover{
+  color: white;
+  text-decoration: none;
 }
