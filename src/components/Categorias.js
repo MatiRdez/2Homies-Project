@@ -11,6 +11,7 @@ const Categorias = () => {
                 <div className="texto-categorias">
                     <p>¡Bienvenido a nuestro mundo de lectura emocionante y variada! Sumérgete en nuestras categorías y descubre un universo de historias fascinantes que abarcan desde la acción más intensa hasta los romances más apasionados. Explora la magia de la fantasía, vive la adrenalina de la aventura, y déjate envolver por el misterio del terror. Cada categoría es una puerta a un nuevo viaje literario. ¿Listo para explorar y encontrar tu próxima historia favorita? ¡Adelante, las páginas te esperan con ansias! 📚✨</p>
                 </div>
+                <hr></hr>
                 <div class="container-cats">
                     <div class="categoria aventura"><Link to="/aventura">
                         <h2>Aventura</h2>
