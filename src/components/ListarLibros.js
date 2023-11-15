@@ -28,12 +28,12 @@ const ListarLibros = () => {
                 {libros.map((libro) => (
                     <li key={libro.id}>
                         <div className="detalle-libro"><strong>Título:</strong> {libro.Título} <strong>Autor:</strong> {libro.Autor} <strong>Género:</strong> {libro.Género}</div>
-                        <button className="modificar"><Link to={`/editar-libro/${libro.id}`}>Modificar</Link></button>
+                        <button className="modificar"><Link to={`/editar-libro/${libro.id}`} className="link">Modificar</Link></button>
                         <EliminarLibro libroId={libro.id}/>
                     </li>
                 ))}
             </ul>
-            <button className="agregar"><Link to={"/agregar-libros"}>Agregar libros (+)</Link></button>
+            <button className="agregar"><Link to={"/agregar-libros"} className="link">Agregar libros (+)</Link></button>
         </div>
     )
 }

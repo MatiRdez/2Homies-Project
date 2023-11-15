@@ -45,12 +45,12 @@ button{
 .boton-lista{
     text-decoration: none;
     color: white;
-    background-color: orange;
+    background-color: #db8c0d;
     width: 180px;
 }
 
 .boton-lista:hover{
-    background-color: rgb(165, 112, 12);
+    background-color: rgb(191, 132, 22);
 }
 
 label{

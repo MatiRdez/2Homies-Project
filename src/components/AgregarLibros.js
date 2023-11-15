@@ -95,7 +95,7 @@ const AgregarLibros = () => {
                 onChange={(e) => setURL(e.target.value)}
             />
             <button onClick={BotonCrearLibro}>Agregar libro</button>
-            <button className="boton-lista"><Link to={"/listar-libros"}>Ver lista de libros</Link></button>
+            <button className="boton-lista"><Link to={"/listar-libros"} className="link">Ver lista de libros</Link></button>
         </div>
     )
 }

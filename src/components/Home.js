@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Home.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
           </div>
           <hr></hr>
           <div>
-            <button className="boton-navegar"><NavLink to="/navegar">Comenzar a navegar!</NavLink></button>
+            <button className="boton-navegar"><Link to="/navegar" className="link-navegar">Comenzar a navegar!</Link></button>
           </div>
         </div>
       </div>

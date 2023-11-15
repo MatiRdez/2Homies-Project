@@ -48,7 +48,7 @@ body {
 
 .boton-navegar{
   width: 500px;
-  background: #db8c0d;
+  background-color: #db8c0d;
   font-weight: bold;
 }
 
@@ -56,12 +56,10 @@ body {
   background-color: rgb(191, 132, 22);
 }
 
-.boton-navegar a{
-  color: white;
-  text-decoration: none;
-}
-
-.boton-navegar a:hover{
-  color: white;
-  text-decoration: none;
+.link-navegar{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  color: inherit; /* Utiliza el color de texto predeterminado */
 }
