@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import '../components/styles/Registro.css';
 import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import BotonLogin from '../components/BotonLogin';
 import Swal from 'sweetalert2'
+
 const Registro = () => {
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState('');
     const [usuario, setUsuario] = useState('');
@@ -18,56 +21,44 @@ const Registro = () => {
         createUserWithEmailAndPassword(auth, email, usuario, password)
             .then((userCredential) => {
                 console.log(userCredential);
-                
                 Swal.fire({
                     title: "Listo!",
                     text: "Registrado correctamente",
                     icon: "success"
-                  });
+                });
+                navigate("/home");
             })
             .catch((error) => {
                 console.log(error);
                 if(error.code === 'auth/invalid-email'){
-                  
                     Swal.fire({
-                            icon: "error",
-                            title: "Parece que ha sucedido un error",
-                            text: "Ingrese un correo electrónico válido",
-                            footer: '<a href="#">Why do I have this issue?</a>'
-                          });
-                        
+                        icon: "error",
+                        title: "Parece que ha sucedido un error",
+                        text: "Ingrese un correo electrónico válido",
+                    });    
                 }
                 else{
                     if(error.code === 'auth/email-already-in-use'){
-                        
                         Swal.fire({
                             icon: "error",
                             title: "Parece que ha sucedido un error",
                             text: "El correo electrónico que ingresó ya está en uso, intente con otro",
-                            footer: '<a href="#">Why do I have this issue?</a>'
-                          });
-                        
+                        });
                     }
                     else{
-                        
                         Swal.fire({
                             icon: "error",
                             title: "Parece que ha sucedido un error",
                             text: "Por favor, complete los campos correctamente",
-                            footer: '<a href="#">Why do I have this issue?</a>'
-                          });
-                        
+                        });
                     }
                 }
                 if(password.length < 8){
-           
                     Swal.fire({
                         icon: "error",
                         title: "Parece que ha sucedido un error",
                         text: "La contraseña debe tener al menos 8 caracteres.",
-                        footer: '<a href="#">Why do I have this issue?</a>'
-                      });
-                    
+                    });
                     return;
                 }
         
@@ -77,9 +68,7 @@ const Registro = () => {
                         icon: "error",
                         title: "Parece que ha sucedido un error",
                         text: "Las contraseñas no coinciden.",
-                        footer: '<a href="#">Why do I have this issue?</a>'
-                      });
-                    
+                    });
                     return;
                 }
             })

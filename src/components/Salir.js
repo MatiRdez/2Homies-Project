@@ -11,12 +11,11 @@ const Salir = () => {
     const CerrarSesion = () => {
         signOut(auth)
             .then(() => {
-                
                 Swal.fire({
                     title: "Listo!",
                     text: "Sesión cerrada correctamente",
                     icon: "success"
-                  });
+                });
                 navigate("/")
             })
             .catch((error) => {

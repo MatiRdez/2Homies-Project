@@ -8,24 +8,25 @@ import BotonAnonimo from "../components/LoginAnonimo";
 import { useNavigate, NavLink } from "react-router-dom";
 import BotonLogin from "../components/BotonLogin";
 import Swal from 'sweetalert2'
+
 const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
     const navigate = useNavigate();
 
     const Datos = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                console.log(userCredential);
-                
+                console.log(userCredential)
                 Swal.fire({
                     title: "Listo!",
                     text: "Logeado correctamente",
                     icon: "success"
-                  });
-                  
+                });
+                navigate("/home");
             })
             .catch((error) => {
                 console.log(error.code);
@@ -35,8 +36,7 @@ const Login = () => {
                         icon: "error",
                         title: "Parece que ha sucedido un error",
                         text: "Ingrese un correo electrónico válido",
-                        footer: '<a href="#">Why do I have this issue?</a>'
-                      });
+                    });
                 }
                 else{
                     if(error.code === 'auth/user-not-found'){
@@ -45,28 +45,23 @@ const Login = () => {
                             icon: "error",
                             title: "Parece que ha sucedido un error",
                             text: "El usuario no está registrado",
-                            footer: '<a href="#">Why do I have this issue?</a>'
-                          });
+                        });
                         
                     }
                     else{
                         if(error.code === 'auth/wrong-password'){
-                           
                             Swal.fire({
-                        icon: "error",
-                        title: "Parece que ha sucedido un error",
-                        text: "La contraseña es incorrecta",
-                        footer: '<a href="#">Why do I have this issue?</a>'
-                      });
+                                icon: "error",
+                                title: "Parece que ha sucedido un error",
+                                text: "La contraseña es incorrecta",
+                            });
                         }
                         else{
-                           
                             Swal.fire({
                                 icon: "error",
                                 title: "Parece que ha sucedido un error",
                                 text: "Por favor, complete los campos correctamente",
-                                footer: '<a href="#">Why do I have this issue?</a>'
-                              });
+                            });
                         }
                     }
                 }
