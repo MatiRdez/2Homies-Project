@@ -28,7 +28,12 @@ const Buscador = () => {
     setActive(input !== ''); // Activa/desactiva según si hay texto en el input
   };
 
-  
+  const handleSuggestionClick = (suggestion) => {
+    setSelectedSuggestion(suggestion);
+    setUserInput(suggestion);
+    setActive(false);
+    // Puedes realizar aquí cualquier acción adicional al seleccionar una sugerencia
+  };
 
   return (
     <div className="container-buscador">
