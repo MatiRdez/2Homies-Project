@@ -60,7 +60,11 @@ const EditarLibro = () => {
                 PortadaURL: nuevoPortadaURL,
                 URL: nuevoURL,
             });
-            alert("Libro actualizado correctamente");
+            Swal.fire({
+                icon: "success",
+                title: "Bien hecho!",
+                text: "Documento actualizado correctamente",
+            });
             navigate("/listar-libros");
         }catch(error){
             console.error("Error al actualizar el libro: ", error);
