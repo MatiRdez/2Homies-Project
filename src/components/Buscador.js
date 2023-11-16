@@ -37,7 +37,14 @@ const Buscador = () => {
 
   return (
     <div className="container-buscador">
-      
+      <div className={`search-input-box ${active ? 'active' : ''}`}>
+        <input
+          type="text"
+          placeholder="¿Qué quieres buscar?"
+          value={userInput}
+          onChange={handleInputChange}
+        />
+        </div>
     </div>
   );
 };
