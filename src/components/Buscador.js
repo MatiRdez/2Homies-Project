@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from 'react';
+import '../components/styles/Buscador.css';
 
 const Buscador = () => {
-    return(
-        <div>
-            <input type="text" placeholder="Buscar..."></input>
-        </div>
-    )
-}
+  const initialSuggestions = [
+    'Terror',
+    'Aventura',
+    'Romance',
+    'Acción',
+    'Fantasía',
+    'Historia'
+  ];
+
+  
+  
+
+  return (
+    <div className="container-buscador">
+      
+    </div>
+  );
+};
 
 export default Buscador;
