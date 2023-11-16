@@ -63,3 +63,13 @@ body {
   text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
   color: inherit; /* Utiliza el color de texto predeterminado */
 }
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto; /* Ajusta el margen en dispositivos pequeños */
+    padding: 10px; /* Reduce más el padding para ahorrar espacio */
+  }
+
+  .boton-navegar {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
