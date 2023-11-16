@@ -9,7 +9,6 @@ const EliminarLibro = ({ libroId }) => {
         try{
             const libroRef = doc(db, "Libros", libroId);
             await deleteDoc(libroRef);
-            alert("Libro eliminado con éxito");
             window.location.reload();
         }
         catch(error){

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./styles/Menu.css";
 import ImgLogo from "../components/images/LogoApp.png";
-
 import Salir from "./Salir";
 import { NavLink } from "react-router-dom";
 import Buscador from "./Buscador";
+import Swal from "sweetalert2";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +13,14 @@ const Menu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const alerta = () => {
+    Swal.fire({
+      icon: "info",
+      title: "Sección en desarrollo",
+      text: "Vuelva próximamente",
+  });
+  }
+
   return (
     <div>
       <div className="header">
@@ -20,7 +28,6 @@ const Menu = () => {
           ☰
         </div>
         <img src={ImgLogo} alt="Logo" className="logo" />
-        <h1 className="titulo">Bienvenidos!</h1>
         <div className="search-container">
           <Buscador />
         </div>
@@ -33,7 +40,7 @@ const Menu = () => {
           <NavLink to="/navegar" onClick={toggleMenu}>
             <li>Navegar</li>
           </NavLink>
-          <li>Mi colección</li>
+          <li onClick={alerta}>Mi colección</li>
           <NavLink to="/listar-libros" onClick={toggleMenu}>
             <li>CRUD - Libros</li>
           </NavLink>
