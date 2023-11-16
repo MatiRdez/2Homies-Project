@@ -4,6 +4,7 @@ import { db, storage } from "../firebaseConfig";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useParams, useNavigate } from "react-router-dom";
 import "../components/styles/BotonCRUD.css";
+import Swal from "sweetalert2";
 
 const EditarLibro = () => {
 
@@ -63,6 +64,11 @@ const EditarLibro = () => {
             navigate("/listar-libros");
         }catch(error){
             console.error("Error al actualizar el libro: ", error);
+            Swal.fire({
+                icon: "error",
+                title: "Parece que ha sucedido un error",
+                text: "Por favor, complete los campos correctamente",
+            });
         }
     };
 
