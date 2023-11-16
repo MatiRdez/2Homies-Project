@@ -50,6 +50,11 @@ const AgregarLibros = () => {
             setFecha("");
             setPortada(null);
             setURL("");
+            Swal.fire({
+                icon: "success",
+                title: "Bien hecho!",
+                text: "Documento agregado correctamente",
+            });
         }
         catch(error){
             console.log("Error al agregar el documento: ", error);
