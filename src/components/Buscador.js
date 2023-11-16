@@ -44,7 +44,23 @@ const Buscador = () => {
           value={userInput}
           onChange={handleInputChange}
         />
-        </div>
+        <a href={`https://www.google.com/search?q=${selectedSuggestion}`} target="_blank">
+          <i className="fa-solid fa-magnifying-glass icon"> </i>
+        </a>
+        <ul className="container-suggestions">
+          {active ? (
+            suggestions.length > 0 ? (
+              suggestions.map((suggestion, index) => (
+                <li key={index} onClick={() => handleSuggestionClick(suggestion)}>
+                  {suggestion}
+                </li>
+              ))
+            ) : (
+              <li className=''>No se encontraron sugerencias</li>
+            )
+          ) : null}
+        </ul>
+      </div>
     </div>
   );
 };
