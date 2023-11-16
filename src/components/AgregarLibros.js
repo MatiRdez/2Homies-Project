@@ -4,6 +4,7 @@ import { db, storage } from "../firebaseConfig";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { Link } from "react-router-dom";
 import "../components/styles/BotonCRUD.css";
+import Swal from 'sweetalert2'
 
 const AgregarLibros = () => {
 
@@ -52,6 +53,11 @@ const AgregarLibros = () => {
         }
         catch(error){
             console.log("Error al agregar el documento: ", error);
+            Swal.fire({
+                icon: "error",
+                title: "Parece que ha sucedido un error",
+                text: "Por favor, complete los campos correctamente",
+            });
         }
     }
 
